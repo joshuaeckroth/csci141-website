@@ -1,0 +1,66 @@
+---
+title: Syllabus
+layout: default
+---
+
+<p>
+CSCI 141 - 01, Spring 2015 &mdash; Introduction to Computer Science I<br/>
+</p>
+
+Work hard in this class and you should be able to:
+
+- <b>Use the Java programming language with confidence.</b>
+
+## About me
+
+- Joshua Eckroth, [jeckroth@stetson.edu](mailto:jeckroth@stetson.edu)
+
+- Eliz Hall 214-9, 386-740-2519
+
+- Office hours: TBD
+
+## Grading
+
+- Homeworks: 60%
+
+- Midterm review: 5%
+
+- Midterm exam: 15%
+
+- Final review: 5%
+
+- Final exam: 15%
+
+Homework may be turned in late, up to the day of the final exam. Late
+work is penalized. The maximum grade for late work is 60%.
+
+## Test dates
+
+- Midterm: February 25
+
+- Final exam: ???
+
+See the [calendar](/lecture/calendar.html) for more dates.
+
+## Honor code
+
+I am strongly in agreement with the
+[Stetson University Honor Code](http://www.stetson.edu/other/honor-system/). Any
+form of cheating is not acceptable, will not be tolerated, and could
+lead to dismissal from the University. This includes plagiarism of any
+sort on homework, reviews, or exams. So please, do not cheat!
+
+## Academic success center
+
+If a student anticipates barriers related to the format or
+requirements of a course, she or he should meet with the course
+instructor to discuss ways to ensure full participation. If
+disability-related accommodations are necessary, please register with
+the Academic Success Center (822-7127;
+[www.stetson.edu/asc](http://www.stetson.edu/asc)) and notify the
+course instructor of your eligibility for reasonable
+accommodations. The student, course instructor, and the Academic
+Success Center will plan how best to coordinate accommodations. The
+Academic Success Center is located at 209 E Bert Fish Drive, and can
+be contacted using the email address
+[asc@stetson.edu](mailto:asc@stetson.edu).
