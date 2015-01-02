@@ -17,7 +17,11 @@ Work hard in this class and you should be able to:
 
 - Eliz Hall 214-9, 386-740-2519
 
-- Office hours: TBD
+- Office hours: Mon: 1:30-2:30, Tue: 12-2, Thur: 1-2
+
+## Text book
+
+There is no official text book for this class. This website should be sufficient.
 
 ## Grading
 
@@ -38,7 +42,7 @@ work is penalized. The maximum grade for late work is 60%.
 
 - Midterm: February 25
 
-- Final exam: ???
+- Final exam: Monday, May 4, 8-10am
 
 See the [calendar](/lecture/calendar.html) for more dates.
 

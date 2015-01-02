@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Course calendar
+title: Calendar
 ---
 
 <table>
@@ -22,24 +22,22 @@ title: Course calendar
         <a href="/lecture/eclipse.html">Eclipse</a>
         <br/>
         <a href="/lecture/git.html">git</a>
-        <br/>
-        <a href="/lecture/proglang.html">Overview of programming languages</a>
       </td>
       <td><a href="/homework/homework-1.html">Homework&nbsp;1</a></td>
     </tr>
     <tr>
       <td><b>2</b><br/>1/21 - 1/23</td>
       <td>
-        <a href="/lecture/processing-library.html">Processing library</a>
-        <br/>
         <a href="/lecture/variables-types-scope.html">Variables, types, scope</a>
+        <br/>
+        <a href="/lecture/conditionals.html">Conditionals</a>
       </td>
       <td><a href="/homework/homework-2.html">Homework&nbsp;2</a></td>
     </tr>
     <tr>
       <td><b>3</b><br/>1/26 - 1/30</td>
       <td>
-        <a href="/lecture/conditionals.html">Conditionals</a>
+        <a href="/lecture/loops.html">Loops</a>
       </td>
       <td>
         <a href="/homework/homework-3.html">Homework&nbsp;3</a>
@@ -48,7 +46,7 @@ title: Course calendar
     <tr>
       <td><b>4</b><br/>2/2 - 2/6</td>
       <td>
-        <a href="/lecture/loops.html">Loops</a>
+        <a href="/lecture/processing-library.html">Processing library</a>
       </td>
       <td>
         <a href="/homework/homework-4.html">Homework&nbsp;4</a>
@@ -75,10 +73,14 @@ title: Course calendar
     <tr>
       <td><b>7</b><br/>2/23 - 2/27</td>
       <td>
-        <b>2/25: Midterm exam</b>; see <a href="/guide/midterm-exam.html">Study guide</a>
+        <strong>2/25: Midterm exam</strong>
         <br/>
-        2/27: Review answers
-      <td><a href="/homework/homework-7.html">Homework&nbsp;7</a></td>
+        Midterm review is <a href="/homework/homework-7.html">Homework&nbsp;7</a>
+        <br/>
+        2/27: Discuss answers
+      <td>
+        <a href="/homework/homework-7.html">Homework&nbsp;7</a>
+      </td>
     </tr>
     <tr>
       <td><b>8</b><br/>3/9 - 3/13</td>
@@ -153,9 +155,11 @@ title: Course calendar
       </td>
     </tr>
     <tr>
-      <td><b>16</b><br/>???</td>
+      <td><b>16</b><br/>5/4</td>
       <td>
-        Final exam (TIME?)
+        <strong>5/4: Final exam: Monday, 8-10 am</strong>
+        <br/>
+        Final exam review is <a href="/homework/homework-15.html">Homework&nbsp;15</a>
       </td>
       <td></td>
     </tr>
