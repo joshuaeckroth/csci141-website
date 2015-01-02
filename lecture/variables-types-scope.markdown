@@ -5,28 +5,28 @@ layout: default
 
 Variables are containers for values. Every (interesting) program you write will use variables. Here is an example of a variable:
 
-```java
+{% highlight java %}
 int x = 5;
-```
+{% endhighlight %}
 
 That code sets up `x` (we can choose its name) to be a variable with type `int` (integer), and to have the value `5`. We can change the value later:
 
-```java
+{% highlight java %}
 x = 6;
-```
+{% endhighlight %}
 
 And we can get the value back out of the variable and, for example, print this value:
 
-```java
+{% highlight java %}
 System.out.println(x);
-```
+{% endhighlight %}
 
 When a variable is on the left-hand side of an `=` sign, we call it an `LVALUE`. Only a single variable can be an `LVALUE`. The right-hand side of the `=` is the `RVALUE` and can be anything you want.
 
-```java
+{% highlight java %}
 x        =  (y+3)*2;
 ^LVALUE     ^^^^^^^RVALUE
-```
+{% endhighlight %}
 
 ## Types
 
@@ -64,23 +64,23 @@ When we create variables of class types, we usually call them "objects" (not var
 
 `String` is a common class. We can create an object of this type:
 
-```java
+{% highlight java %}
 String s;
-```
+{% endhighlight %}
 
 We can give it a value as well.
 
-```java
+{% highlight java %}
 String s = "foo bar";
-```
+{% endhighlight %}
 
 We see that the `String` class has a literal syntax (double-quotes). Anything typed in double-quotes is a `String` type of value.
 
 All the other class types do not have a literal syntax. To create values of other classes, you must use the `new` keyword:
 
-```java
+{% highlight java %}
 FooBar f = new FooBar();
-```
+{% endhighlight %}
 
 Here are some common class types:
 
@@ -93,12 +93,12 @@ Here are some common class types:
 
 Some classes require that you indicate the kinds of classes to be used internally. For example, the `HashMap` class is a container that associates keys with values (one key for one value). It can use any type as the key and any type as the value. You must tell it which type is the key and which is the value. For example, below we'll make a `HashMap` with `String` keys and `int` values:
 
-```java
+{% highlight java %}
 HashMap<String, int> mymap = new HashMap<String, int>();
 // put some stuff in the map
 mymap.put("apple", 3);
 mymap.put("banana", 0);
-```
+{% endhighlight %}
 
 This feature is called "generics," because the `HashMap` class is generic, it can work with any two types.
 

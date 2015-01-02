@@ -7,10 +7,10 @@ layout: default
 
 For the table below, assume we have:
 
-```java
+{% highlight java %}
 boolean p = true;
 boolean q = false;
-```
+{% endhighlight %}
 
 | Operator | Meaning | Example |
 |----------|---------|---------|
@@ -24,10 +24,10 @@ boolean q = false;
 
 For the table below, assume we have:
 
-```java
+{% highlight java %}
 int x = 5;
 double y = 5.75;
-```
+{% endhighlight %}
 
 | Operator | Meaning | Example |
 |----------|---------|---------|
@@ -38,24 +38,24 @@ double y = 5.75;
 
 ## `if`
 
-```java
+{% highlight java %}
 if(x > 5)
     System.out.println("yay!");
-```
+{% endhighlight %}
 
 Braces are required if you have more than one line of code after the `if`:
 
-```java
+{% highlight java %}
 if(x > 5)
 {
     System.out.println("yay!");
     System.out.println("yay!");
 }
-````
+{% endhighlight %}`
 
 ## `if`, `else`
 
-```java
+{% highlight java %}
 if(x > 5)
 {
     System.out.println("It seems x is greater than 5.");
@@ -64,7 +64,7 @@ else
 {
     System.out.println("It seems x is less than or equal to 5.");
 }
-```
+{% endhighlight %}
 
 ## `if`, `else if`, `else if`, etc.
 

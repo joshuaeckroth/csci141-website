@@ -9,26 +9,26 @@ Before we switch to graphics with the [Processing library](/lecture/processing-l
 
 The console can show a stream of text (and nothing more). It is sometimes referred to as "standard out" or "stdout". In Java, you have two functions that print to stdout: `System.out.print()` and `System.out.println()`.
 
-```java
+{% highlight java %}
 System.out.print("Hello, ");
 System.out.print("World!"); // on same line as previous
 
 System.out.println("Hello, ");
 System.out.print("World!"); // on next line, since previous added a newline
-```
+{% endhighlight %}
 
 ### String manipulation
 
 We have already looked at [variables](/lecture/variables-types-scope.html). You can print a variable's value in the usual way:
 
-```java
+{% highlight java %}
 int x = 2;
 System.out.println(x);
-```
+{% endhighlight %}
 
 But due to the way strings work in Java (the `String` type), you can use the `+` operator to concatenate (join) a string and other variable types before printing.
 
-```java
+{% highlight java %}
 String name = "Slim Shady";
 
 String s = "My name is: ";
@@ -44,7 +44,7 @@ System.out.println("The value of x is: " + x);
 
 double pi = 3.14;
 System.out.println("PI = " + pi + ", approximately.");
-```
+{% endhighlight %}
 
 ## Console (keyboard) input
 
@@ -60,24 +60,24 @@ A typical technique for reading from stdin is to use a `Scanner` object. You can
 
 Create a new `Scanner` object like so:
 
-```java
+{% highlight java %}
 // requires: import java.util.Scanner;
 
 Scanner in = new Scanner(System.in); // note, you don't have to name your object "in"
-```
+{% endhighlight %}
 
 Now you can use your `in` object to call various functions that read different types of values from stdin.
 
-```java
+{% highlight java %}
 String word = in.next(); // grab input until a space/newline is reached
 String line = in.nextLine();
 int x = in.nextInt();
 double y = in.nextDouble();
-```
+{% endhighlight %}
 
 You can also check if the input contains an integer, or whatever. These examples use [conditionals](/lecture/conditionals.html), which we'll look at soon.
 
-```java
+{% highlight java %}
 // is there anything at all left to read?
 if(in.hasNext())
 {
@@ -90,4 +90,4 @@ if(in.hasNextInt())
 {
     x = in.nextInt();
 }
-```
+{% endhighlight %}
