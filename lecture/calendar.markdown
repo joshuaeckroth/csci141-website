@@ -19,9 +19,13 @@ title: Calendar
         <br/>
         <a href="/lecture/calendar.html">Calendar</a>
         <br/>
+        <a href="/lecture/proglang.html">Programming languages</a>
+        <br/>
         <a href="/lecture/eclipse.html">Eclipse</a>
         <br/>
         <a href="/lecture/git.html">git</a>
+        <br/>
+        <a href="/lecture/simple-io.html">Simple input/output</a>
       </td>
       <td><a href="/homework/homework-1.html">Homework&nbsp;1</a></td>
     </tr>
@@ -31,13 +35,15 @@ title: Calendar
         <a href="/lecture/variables-types-scope.html">Variables, types, scope</a>
         <br/>
         <a href="/lecture/conditionals.html">Conditionals</a>
+        <br/>
+        <a href="/lecture/loops.html">Loops</a>
       </td>
       <td><a href="/homework/homework-2.html">Homework&nbsp;2</a></td>
     </tr>
     <tr>
       <td><b>3</b><br/>1/26 - 1/30</td>
       <td>
-        <a href="/lecture/loops.html">Loops</a>
+        <a href="/lecture/processing-library.html">Processing library</a>
       </td>
       <td>
         <a href="/homework/homework-3.html">Homework&nbsp;3</a>
@@ -46,7 +52,7 @@ title: Calendar
     <tr>
       <td><b>4</b><br/>2/2 - 2/6</td>
       <td>
-        <a href="/lecture/processing-library.html">Processing library</a>
+        <a href="/lecture/functions.html">Functions</a>
       </td>
       <td>
         <a href="/homework/homework-4.html">Homework&nbsp;4</a>
@@ -55,7 +61,13 @@ title: Calendar
     <tr>
       <td><b>5</b><br/>2/9 - 2/13</td>
       <td>
-        <a href="/lecture/functions.html">Functions</a>
+        2/9: Test 1 review in-class
+        <br/>
+        Note that <a href="/homework/homework-4.html">Homework&nbsp;4</a> is a test review
+        <br/>
+        <strong>2/11: Test 1</strong>
+        <br/>
+        2/13: Discuss answers, <a href="/lecture/functions.html">Functions</a>
       </td>
       <td>
         <a href="/homework/homework-5.html">Homework&nbsp;5</a>
@@ -73,11 +85,7 @@ title: Calendar
     <tr>
       <td><b>7</b><br/>2/23 - 2/27</td>
       <td>
-        <strong>2/25: Midterm exam</strong>
-        <br/>
-        Midterm review is <a href="/homework/homework-7.html">Homework&nbsp;7</a>
-        <br/>
-        2/27: Discuss answers
+        <a href="/lecture/arrays.html">Arrays</a>
       <td>
         <a href="/homework/homework-7.html">Homework&nbsp;7</a>
       </td>
@@ -95,6 +103,8 @@ title: Calendar
       <td><b>9</b><br/>3/16 - 3/20</td>
       <td>
         <a href="/lecture/exceptions.html">Exceptions</a>
+        <br/>
+        <a href="/lecture/files.html">Files</a>
       </td>
       <td>
         <a href="/homework/homework-9.html">Homework&nbsp;9</a>
@@ -103,7 +113,13 @@ title: Calendar
     <tr>
       <td><b>10</b><br/>3/23 - 3/27</td>
       <td>
-        <a href="/lecture/files.html">Files</a>
+        3/23: Test 2 review in-class
+        <br/>
+        Note that <a href="/homework/homework-9.html">Homework&nbsp;9</a> is a test review
+        <br/>
+        <strong>3/25: Test 2</strong>
+        <br/>
+        3/27: Discuss answers, <a href="/lecture/files.html">Files</a>
       </td>
       <td>
         <a href="/homework/homework-10.html">Homework&nbsp;10</a>
@@ -148,7 +164,9 @@ title: Calendar
     <tr>
       <td><b>15</b><br/>4/27 - 4/29</td>
       <td>
-
+        4/29: Final review in-class
+        <br/>
+        Note that <a href="/homework/homework-15.html">Homework&nbsp;15</a> is the final exam review
       </td>
       <td>
         <a href="/homework/homework-15.html">Homework&nbsp;15</a>
@@ -158,8 +176,6 @@ title: Calendar
       <td><b>16</b><br/>5/4</td>
       <td>
         <strong>5/4: Final exam: Monday, 8-10 am</strong>
-        <br/>
-        Final exam review is <a href="/homework/homework-15.html">Homework&nbsp;15</a>
       </td>
       <td></td>
     </tr>

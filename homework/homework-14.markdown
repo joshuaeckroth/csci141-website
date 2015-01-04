@@ -7,10 +7,10 @@ Skills needed to complete this assignment:
 
 - [Networking](/lecture/networking.html)
 
-# Task 1
+## Task 1
 
 (networked game world)
 
-# Extra credit
+## Extra credit
 
 (include chat client)

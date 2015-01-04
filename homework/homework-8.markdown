@@ -7,5 +7,5 @@ Skills needed to complete this assignment:
 
 - [Arrays](/lecture/arrays.html)
 
-# Task 1
+## Task 1
 

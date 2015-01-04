@@ -8,10 +8,10 @@ Skills needed to complete this assignment:
 - [Arrays](/lecture/arrays.html)
 - [Threads](/lecture/threads.html)
 
-# Task 1
+## Task 1
 
 (termites collecting sand)
 
-# Extra credit
+## Extra credit
 
 (ants finding food)

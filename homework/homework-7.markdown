@@ -1,14 +1,11 @@
 ---
-title: Homework 7 (Midterm review)
+title: Homework 7
 layout: default
 ---
 
 Skills needed to complete this assignment:
 
-- [Variables, types, scope](/lecture/variables-types-scope.html)
-- [Conditionals](/lecture/conditionals.html)
-- [Loops](/lecture/loops.html)
-- [Functions](/lecture/functions.html)
-- [Recursion](/lecture/recursion.html)
+- [Arrays](/lecture/arrays.html)
 
-# Task 1
+## Task 1
+

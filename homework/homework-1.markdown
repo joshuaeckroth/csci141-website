@@ -7,10 +7,11 @@ Skills needed to complete this assignment:
 
 - How to use [Eclipse](/lecture/eclipse.html)
 - How to use [git](/lecture/git.html)
+- [Simple input/output](/lecture/simple-io.html)
 
-# Task 1
+## Task 1
 
-The only task for this homework is to create a Bitbucket account, create a git repository, add files to it and make a few commits, create a tag, and push your changes up to Bitbucket.
+Write a program that simply prints your favorite quote. Also, create a Bitbucket account, create a git repository, add your code to it and make a commit, and push your changes up to Bitbucket.
 
 I will look at your Bitbucket account and grade the assignment from there. You do not submit anything to me.
 

@@ -9,10 +9,10 @@ Skills needed to complete this assignment:
 - [Files](/lecture/files.html)
 - [Events](/lecture/events.html)
 
-# Task 1
+## Task 1
 
 (orchestra)
 
-# Extra credit
+## Extra credit
 
 (more instruments, more note durations)

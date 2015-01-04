@@ -25,24 +25,27 @@ There is no official text book for this class. This website should be sufficient
 
 ## Grading
 
-- Homeworks: 60%
-
-- Midterm review: 5%
-
-- Midterm exam: 15%
-
-- Final review: 5%
-
-- Final exam: 15%
+<table>
+<tr>
+<td>Homeworks</td><td>55%</td>
+</tr><tr>
+<td>Test 1</td><td>15%</td>
+</tr><tr>
+<td>Test 2</td><td>15%</td>
+</tr><tr>
+<td>Final exam</td><td>15%</td>
+</table>
 
 Homework may be turned in late, up to the day of the final exam. Late
 work is penalized. The maximum grade for late work is 60%.
 
 ## Test dates
 
-- Midterm: February 25
+- Test 1: Wed, Feb 11
 
-- Final exam: Monday, May 4, 8-10am
+- Test 2: Wed, Mar 25
+
+- Final exam: Mon, May 4, 8-10am
 
 See the [calendar](/lecture/calendar.html) for more dates.
 
