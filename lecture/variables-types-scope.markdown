@@ -3,6 +3,8 @@ title: Variables, types, scope
 layout: default
 ---
 
+## Variables
+
 Variables are containers for values. Every (interesting) program you write will use variables. Here is an example of a variable:
 
 {% highlight java %}
@@ -101,8 +103,6 @@ mymap.put("banana", 0);
 {% endhighlight %}
 
 This feature is called "generics," because the `HashMap` class is generic, it can work with any two types.
-
-### Arrays
 
 ## Scope
 

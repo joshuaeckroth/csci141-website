@@ -23,19 +23,17 @@ title: Calendar
         <br/>
         <a href="/lecture/eclipse.html">Eclipse</a>
         <br/>
-        <a href="/lecture/git.html">git</a>
+        <a href="/lecture/variables-types-scope.html">Variables, types, scope</a>
         <br/>
         <a href="/lecture/simple-io.html">Simple input/output</a>
+        <br/>
+        <a href="/lecture/conditionals.html">Conditionals</a>
       </td>
       <td><a href="/homework/homework-1.html">Homework&nbsp;1</a></td>
     </tr>
     <tr>
       <td><b>2</b><br/>1/21 - 1/23</td>
       <td>
-        <a href="/lecture/variables-types-scope.html">Variables, types, scope</a>
-        <br/>
-        <a href="/lecture/conditionals.html">Conditionals</a>
-        <br/>
         <a href="/lecture/loops.html">Loops</a>
       </td>
       <td><a href="/homework/homework-2.html">Homework&nbsp;2</a></td>

@@ -39,6 +39,8 @@ There is no official text book for this class. This website should be sufficient
 Homework may be turned in late, up to the day of the final exam. Late
 work is penalized. The maximum grade for late work is 60%.
 
+Homework will be turned in on Blackboard. See [homework 1](/homework/homework-1.html) for information about how to submit code.
+
 ## Test dates
 
 - Test 1: Wed, Feb 11
