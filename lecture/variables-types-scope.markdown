@@ -104,6 +104,44 @@ mymap.put("banana", 0);
 
 This feature is called "generics," because the `HashMap` class is generic, it can work with any two types.
 
+## Constant ("final") variables
+
+You can add the keyword `final` when declaring a variable to indicate that its value may never change. For example:
+
+{% highlight java %}
+final int SPECIAL_VALUE = 5;
+{% endhighlight %}
+
+By convention, we name such constant variables in all-caps.
+
 ## Scope
 
-## Lifetime
+Every variable has a specific "scope," which means the areas in your code where that variable is accessible or "visible." Scope is defined according to blocks.
+
+A block is a collection of code between `{` and `}`.
+
+```
+{  <-- start a block
+   blah blah blah
+   {  <-- start inside (nested) block
+      blah blah blah
+   }  <-- end inside block
+   blah blah blah
+}  <-- end outside block
+```
+
+Generally, a variable is visible in the code after its creation until its own block ends. It is also visible inside deeper blocks. Here is an example:
+
+{% highlight java %}
+int a;
+{
+  int b;    // visible: a, b
+  {
+    int c;  // visible: a, b, c
+  }
+  int d;    // visible: a, b, d
+}
+...         // visible: a
+{% endhighlight %}
+
+Once a variable goes out of scope, it is destroyed (removed from memory, its value is lost). Java uses "garbage collection" to figure out which variables can be destroyed. As we start using "classes", later in the course, we will see how garbage collection can get very complicated, though the underlying system takes care of it for us.

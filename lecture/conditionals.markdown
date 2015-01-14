@@ -51,7 +51,7 @@ if(x > 5)
     System.out.println("yay!");
     System.out.println("yay!");
 }
-{% endhighlight %}`
+{% endhighlight %}
 
 ## `if`, `else`
 
