@@ -20,6 +20,26 @@ boolean q = false;
 | `!=` | "not equal", opposite of `==` | `p != q` is `true`, `p != true` is `false` |
 | `!` | "not", just negates a `boolean` value | `!p` is `false`, `!q` is `true` |
 
+### Truth tables
+
+We can figure out the truth of a complicated boolean expression by finding the truth-value of each part. We build a table for this operation because we need to keep track of all the different values that the variables/subexpressions may hold.
+
+For what values of boolean variables `x`, `y`, and `z` make this true? `!(x || (y && !z))`
+
+We break the expression into its variables and subexpressions and put them all in the table.
+
+| `x` | `y` | `z` | `!z` | `y && !z` | `x \|\| (y && !z)` | `!(x \|\| (y && !z))` |
+|---
+| `true` | `true` | `true` | `false` | `false` | `true` | `false` |
+| `true` | `true` | `false` | `true` | `true` | `true` | `false` |
+| `true` | `false` | `true` | `false` | `false` | `true` | `false` |
+| `true` | `false` | `false` | `true` | `false` | `true` | `false` |
+| `false` | 	`true` | 	`true` | 	`false` | 	`false` | 	`false` | 	`true` |
+| `false` | 	`true` | 	`false` | 	`true` | 	`true` | 	`true` | 	`false` |
+| `false` | 	`false` | 	`true` | 	`false` | 	`false` | 	`false` | 	`true` |
+| `false` | 	`false` | 	`false` | 	`true` | 	`false` | 	`false` | 	`true` |
+
+
 ## Arithmetic comparison operators
 
 For the table below, assume we have:

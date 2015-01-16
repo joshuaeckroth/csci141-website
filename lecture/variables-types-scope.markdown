@@ -58,6 +58,22 @@ Summary:
 - Use `boolean` for true/false values
 - Use `char` to represent single symbols
 
+### Arithmetic and String operators
+
+| Operator | Left type | Right type | Explanation |
+|---
+| `+`, `-`, `*` | `int` | `int` | Adds, subtracts, multiplies as **integers**; result is `int` |
+| `/` | `int` | `int` | Produces the "quotient"; see notes below; result is `int` |
+| `%` | `int` | `int` | Produces the "remainder"; see notes below; result is `int` |
+| `+`, `-`, `*`, `/` | `int` | `double` | Adds, subtracts, multiplies, divides as **doubles**; the left side is converted to a `double` first; result is `double` |
+| `+`, `-`, `*`, `/` | `double` | `int` | Adds, subtracts, multiplies, divides as **doubles**; the right side is converted to a `double `first; result is `double` |
+| `+`, `-`, `*`, `/` | `double` | `double` | Adds, subtracts, multiplies, divides as **doubles**; result is `double` |
+| `+` | `String` | whatever | Concatenates (joins) the left-side string with the right side; the right side is converted to a `String` first; result is `String` |
+
+Notice that `/` on two `int` types produces the "quotient." The quotient, `x / y`, is the number of times (an integer) that `y` goes into `x`. So `7 / 2` is `3`, and `11 / 10` is `1`, and `10 / 22` is `0`.
+
+The `%` gives the "remainder" when applied to two `int` types. The remainder, `x % y`, is what's left over after taking as many `y` amounts out of `x` as you can. Necessarily, `0 <= x % y < y`. So `7 % 2` is `1`, and `11 % 10` is `1`, and `10 % 22` is `10`.
+
 ### Common class types
 
 A class type always starts with a capital letter (notice all the primitives are lower-cased). A class type, or just "class," is a complex structure containing other class types and/or primitive types.
