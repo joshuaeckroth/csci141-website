@@ -50,6 +50,47 @@ while(x <= 15)
 }
 {% endhighlight %}
 
+## Breaking a loop with `break`
+
+You can break (stop) the current loop with the `break` statement:
+
+{% highlight java %}
+while(true)
+{
+    // do stuff
+    break;  // get out of here!
+}
+{% endhighlight %}
+
+Often, we put a `break` in an `if` to determine when exactly the loop should break:
+
+{% highlight java %}
+Scanner in = new Scanner(System.in);
+String s;
+while(true)
+{
+    s = in.next();
+    if(s == "quit")
+    {
+        break;
+    }
+
+    // do stuff when s != quit
+}
+{% endhighlight %}
+
 ## `do/while` loop
+
+A `while` loop checks its condition (the boolean expression) before iterating the first time. If the expression is `false`, it never loops. A `do/while` loop, on the other hand, always loops once, and checks the condition second. If the condition is true, the `do/while` loop repeats, until the condition is false.
+
+In summary, use `do/while` if you want the loop code to happen *at least once*. Use `while` if you want it to be possible that the loop code *never happens at all*.
+
+{% highlight java %}
+do
+{
+    // do stuff
+}
+while(condition...);
+{% endhighlight %}
 
 ## `for` loop
