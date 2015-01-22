@@ -18,6 +18,8 @@ This task is borrowed from [Project Euler Problem 5](https://projecteuler.net/pr
 
 Create a program that prints the smallest positive number that is **evenly** divisible by all of the numbers from 1 to 20.
 
+Note: You can check your answer on the Project Euler site if you make a free account.
+
 ## Task 2
 
 Write a program that scores a blackjack hand, repeatedly, until the user types 0. In blackjack, a player receives from two to five cards. The cards 2 through 10 are scored as 2 through 10 points each. The face cards—jack, queen, and king—are scored as 10 points. The goal is to come as close to a score of 21 as possible without going over 21. Hence, any score over 21 is called "busted." The ace can count as either 1 or 11, whichever is better for the user. For example, an ace and a 10 can be scored as either 11 or 21. Since 21 is a better score, this hand is scored as 21. An ace and two 8s can be scored as either 17 or 27. Since 27 is a "busted" score, this hand is scored as 17.

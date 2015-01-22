@@ -94,3 +94,86 @@ while(condition...);
 {% endhighlight %}
 
 ## `for` loop
+
+A `for` loop is no more powerful than a `while` loop; it just has a different (sometimes more convenient) structure:
+
+{% highlight java %}
+for(initialization; conditional; update)
+{
+    // do stuff...
+}
+{% endhighlight %}
+
+This is what the three parts inside the parentheses (commonly) mean:
+
+- `initialization` --- create counting variables and set their values
+
+- `conditional` --- a `boolean` expression that determines if the loop should repeat; this conditional usually refers to a variable defined in the initialization
+
+- `update` --- commonly used to change a variable defined in the initialization and referred to in the conditional; changing this variable should eventually cause the conditional to be false, causing the loop to terminate
+
+`for` loops follow this sequence of steps:
+
+1. execute whatever is put in the initialization
+
+2. check the conditional; if it evaluates to `false` then skip the loop; if it evaluates to `true`, continue to the next step
+
+3. execute the stuff inside the block
+
+4. execute the update
+
+5. go to step 2
+
+It's useful to see how a `while` loop can be converted to a `for` loop. In this example, the `while` loop and the `for` loop are (nearly) equivalent:
+
+{% highlight java %}
+int i = 0;
+while(i < 10)
+{
+    // do stuff...
+    i++;
+}
+
+for(int i = 0; i < 10; i++)
+{
+    // do stuff...
+}
+{% endhighlight %}
+
+(The two are only "nearly" equivalent for the following reason: in the `while` loop case, the integer `i` is declared outside of the loop, so code that follows the loop block can still refer to `i`; in other words, the [scope](/lecture/variables-type-scope.html) of `i` is less constrained in the `while` loop example. In the `for` loop case, the integer `i` can only be used inside the `for` loop block; it does not exist when the loop is finished, because it is no longer in scope.)
+
+Let's dissect that `for` loop above:
+
+- initialization: `int i = 0`
+
+- conditional: `i < 10`
+
+- update: `i++`
+
+You should be able to see these same three components present in the `while` loop, but the `while` loop does not have special handling of the three components. On the other hand, a `for` loop is specifically designed to have exactly those three components (initialization, conditional, and update).
+
+A `for` loop need not have anything in any of the three components. If none of the components have code in them, it is equivalent to an infinite loop. In other words, these two loops are equivalent:
+
+{% highlight java %}
+while(true)
+{
+    // do stuff forever... (or until "break" is encountered)
+}
+for(;;)
+{
+    // do stuff forever... (or until "break" is encountered)
+}
+{% endhighlight %}
+
+Here is an example of a nested `for` loop that is equivalent to Σ<sup>100</sup><sub>j=1</sub> Σ<sup>100</sup><sub>k=1</sub> (j+k)<sup>2</sub>
+
+{% highlight java %}
+int sum = 0;
+for(int j = 1; j <= 100; j++)
+{
+    for(int k = 1; k <= 100; k++)
+    {
+        sum += (j+k)*(j+k);
+    }
+}
+{% endhighlight %}

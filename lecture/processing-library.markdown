@@ -3,10 +3,28 @@ title: Processing library
 layout: default
 ---
 
+The Processing platform provides a variety of graphics functions. To use it, you'll first need to download a JAR file that I extracted out of the Processing package. Download [processing-core.jar](/processing-core.jar) and save it somewhere.
+
+## Using Processing in Eclipse
+
+Create a new Java project in Eclipse in the typical way outlined in the [Eclipse notes](/lecture/eclipse.html).
+
+Right-click on the project name on the left pane and click "Properties" (or go to the Project menu and click "Properties"). Choose "Java Build Path" on the left, and then click "Add External Jars".
+
+![Processing 1](/images/processing-1.png)
+
+Add the `processing-core.jar`. You should see it in the list after it's added.
+
+![Processing 2](/images/processing-2.png)
+
+Now create a class file in the usual way. Rewrite all of it to the following (changing `HelloWorld` in all places to whatever you called your class):
+
 {% highlight java %}
-import processing.core.PApplet;
+import processing.core.*;
 
 public class HelloWorld extends PApplet {
+
+	// put "global" variables here, outside of the functions
 
 	public void setup() {
 
@@ -23,11 +41,75 @@ public class HelloWorld extends PApplet {
 }
 {% endhighlight %}
 
-## Setup
+The `main` function (at the bottom) starts Processing. You can use the commented line of code instead of the non-commented one if you want it to run in fullscreen mode.
+
+The `setup()` function must exist and contains any code you want to run just once, before your program really gets going.
+
+The `draw()` function must also exist and contains drawing code that happens every frame. Normally, Processing with execute the `draw()` function 60-times per second, to give your application 60 frames per second.
+
+You can use `noLoop();` inside `setup()` if you don't need any animation, and only want `draw()` to be executed once.
+
+If Eclipse asks how to run your application, choose "Java Application" not "Java Applet".
+
+Here is an example that draws a bouncing ball:
+
+{% highlight java %}
+import processing.core.*;
+
+public class BouncyBall extends PApplet {
+
+	// ball x, y, and velocities dx, dy
+	int x;
+	int y;
+	int dx;
+	int dy;
+
+	public void setup() {
+		size(800, 600);
+		x = 400; // initial x position
+		y = 400; // initial y position
+		dx = 5;  // initial x velocity
+		dy = 3;  // initial y velocity
+	}
+
+	public void draw() {
+		background(255);
+		fill(0);
+		ellipse(x, y, 50, 50);
+		x += dx;
+		y += dy;
+
+		// bounce off left/right sides
+		if(x > width || x < 0)
+		{
+			dx = -dx;
+		}
+
+		// bounce of top/bottom sides
+		if(y > height || y < 0)
+		{
+			dy = -dy;
+		}
+	}
+
+	public static void main(String[] args) {
+		PApplet.main(new String[] { "BouncyBall" });
+	}
+}
+{% endhighlight %}
+
+## Setup functions
+
+These are useful functions to create in `setup()`:
 
 - `size(int width, int height)` -- set width and height of window
+- `noLoop()` -- indicate that `draw()` should only execute once, not 60 times per second; you can use `noLoop()` in `draw()` as well to stop looping, and `loop()` to start it again
 
-## Shapes
+## Drawing functions
+
+Typically, these are used in the `draw()` function:
+
+### Shapes
 
 - [point()](https://processing.org/reference/point_.html)
 - [line()](https://processing.org/reference/line_.html)
@@ -45,7 +127,7 @@ Change the way shapes are drawn:
 - [strokeJoin()](https://processing.org/reference/strokeJoin_.html)
 - [strokeCap()](https://processing.org/reference/strokeCap_.html)
 
-## Colors
+### Colors
 
 - [color()](https://processing.org/reference/color_.html) -- note, the Processing.org docs show this function returning a `color` type. In our Java programs, use `int` instead.
 - [colorMode()](https://processing.org/reference/colorMode_.html)
@@ -55,7 +137,7 @@ Change the way shapes are drawn:
 - [noStroke()](https://processing.org/reference/noStroke_.html)
 - [background()](https://processing.org/reference/background_.html)
 
-## Images
+### Images
 
 Images should be saved into `PImage` objects (variables with type `PImage`).
 
@@ -65,7 +147,7 @@ Images should be saved into `PImage` objects (variables with type `PImage`).
 - [tint()](https://processing.org/reference/tint_.html) -- change the colors of images drawn subsequently
 - [noTint()](https://processing.org/reference/noTint_.html) -- turn off the tint for images drawn subsequently
 
-## Text & fonts
+### Text & fonts
 
 - [text()](https://processing.org/reference/text_.html) -- put text on the screen
 - [textSize()](https://processing.org/reference/textSize_.html)
@@ -73,7 +155,7 @@ Images should be saved into `PImage` objects (variables with type `PImage`).
 - [createFont()](https://processing.org/reference/createFont_.html)
 - [loadFont()](https://processing.org/reference/loadFont_.html)
 
-## 2D transformations
+### 2D transformations
 
 - [pushMatrix()](https://processing.org/reference/pushMatrix_.html)
 - [popMatrix()](https://processing.org/reference/popMatrix_.html)
@@ -82,7 +164,7 @@ Images should be saved into `PImage` objects (variables with type `PImage`).
 - [rotate()](https://processing.org/reference/rotate_.html)
 - [scale()](https://processing.org/reference/scale_.html)
 
-## 3D graphics
+### 3D graphics
 
 - Use `size(w, h, P3D);`
 - [box()](https://processing.org/reference/box_.html)
