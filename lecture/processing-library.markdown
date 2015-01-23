@@ -3,13 +3,13 @@ title: Processing library
 layout: default
 ---
 
-The Processing platform provides a variety of graphics functions. To use it, you'll first need to download a JAR file that I extracted out of the Processing package. Download [processing-core.jar](/processing-core.jar) and save it somewhere.
+The [Processing](http://processing.org) platform provides a variety of graphics functions. To use it, you'll first need to download a JAR file that I extracted out of the Processing package. Download [processing-core.jar](/processing-core.jar) and save it somewhere.
 
 ## Using Processing in Eclipse
 
 Create a new Java project in Eclipse in the typical way outlined in the [Eclipse notes](/lecture/eclipse.html).
 
-Right-click on the project name on the left pane and click "Properties" (or go to the Project menu and click "Properties"). Choose "Java Build Path" on the left, and then click "Add External Jars".
+Right-click on the project name on the left pane and click "Properties" (or go to the Project menu and click "Properties"). Choose "Java Build Path" on the left, and then click "Add External JARs".
 
 ![Processing 1](/images/processing-1.png)
 
@@ -27,7 +27,7 @@ public class HelloWorld extends PApplet {
 	// put "global" variables here, outside of the functions
 
 	public void setup() {
-
+		size(..., ...);
 	}
 
 	public void draw() {
@@ -35,13 +35,18 @@ public class HelloWorld extends PApplet {
 	}
 
 	public static void main(String[] args) {
-		// or: PApplet.main(new String[] { "--full-screen", "HelloWorld" });
 		PApplet.main(new String[] { "HelloWorld" });
 	}
 }
 {% endhighlight %}
 
-The `main` function (at the bottom) starts Processing. You can use the commented line of code instead of the non-commented one if you want it to run in fullscreen mode.
+The `main` function (at the bottom) starts Processing. You can use the this line of code instead of the non-commented one if you want it to run in fullscreen mode:
+
+{% highlight java %}
+PApplet.main(new String[] { "--full-screen", "HelloWorld" });
+{% endhighlight %}
+
+The `"HelloWorld"` part must change to whatever your main class is named.
 
 The `setup()` function must exist and contains any code you want to run just once, before your program really gets going.
 
@@ -103,6 +108,7 @@ public class BouncyBall extends PApplet {
 These are useful functions to create in `setup()`:
 
 - `size(int width, int height)` -- set width and height of window
+- `frameRate(int rate)` -- set the frame rate; default is 60, for 60 frames per second
 - `noLoop()` -- indicate that `draw()` should only execute once, not 60 times per second; you can use `noLoop()` in `draw()` as well to stop looping, and `loop()` to start it again
 
 ## Drawing functions
@@ -131,11 +137,11 @@ Change the way shapes are drawn:
 
 - [color()](https://processing.org/reference/color_.html) -- note, the Processing.org docs show this function returning a `color` type. In our Java programs, use `int` instead.
 - [colorMode()](https://processing.org/reference/colorMode_.html)
-- [fill()](https://processing.org/reference/fill_.html)
+- [fill()](https://processing.org/reference/fill_.html) -- set the fill color (for shapes)
 - [noFill()](https://processing.org/reference/noFill_.html)
-- [stroke()](https://processing.org/reference/stroke_.html)
+- [stroke()](https://processing.org/reference/stroke_.html) -- set the stroke color (for lines and shapes)
 - [noStroke()](https://processing.org/reference/noStroke_.html)
-- [background()](https://processing.org/reference/background_.html)
+- [background()](https://processing.org/reference/background_.html) -- draw a single color on the whole screen, blanking it out
 
 ### Images
 
@@ -179,3 +185,7 @@ Images should be saved into `PImage` objects (variables with type `PImage`).
 - [emissive()](https://processing.org/reference/emissive_.html)
 - [texture()](https://processing.org/reference/texture_.html) and [textureWrap()](https://processing.org/reference/textureWrap_.html)
 - [camera()](https://processing.org/reference/camera_.html)
+
+### Math
+
+- [random()](https://www.processing.org/reference/random_.html) -- for generating random `float` type values in a specified range; use `int(random(0, 10))` (where 0 and 10 could be whatever) to force it to yield `int` values
