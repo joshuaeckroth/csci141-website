@@ -66,13 +66,66 @@ double[] vals = new double[count];
 
 ## Example functions
 
+### Print an array
+
+{% highlight java %}
+public static void prDoubleArr(double[] vals)
+{
+    System.out.print("{ ");
+    for(int i = 0; i < vals.length; i++)
+    {
+        System.out.print(vals[i]);
+        if(i < (vals.length - 1))
+        {
+            System.out.print(", ");
+        }
+        else
+        {
+            System.out.print(" ");
+        }
+    }
+    System.out.println("}");
+}
+{% endhighlight %}
+
 ### Min
 
 ### Max
 
 ### Sum
 
+{% highlight java %}
+public static double sum(double[] xs)
+{
+    double sum = 0;
+    for(int i = 0; i < xs.length; i++)
+    {
+        sum = sum + xs[i];
+    }
+    return sum;
+}
+{% endhighlight %}
+
 ### Mean
 
-### Standard deviation
+{% highlight java %}
+public static double mean(double[] xs)
+{
+    return sum(xs) / xs.length;
+}
+{% endhighlight %}
 
+### Variance
+
+{% highlight java %}
+public static double variance(double[] xs)
+{
+    double m = mean(xs);
+    double s = 0.0;
+    for(int i = 0; i < xs.length; i++)
+    {
+        s = s + (xs[i] - m)*(xs[i] - m);
+    }
+    return s / (xs.length - 1);
+}
+{% endhighlight %}
