@@ -55,7 +55,10 @@ ys = CSVReader.getColumn(ycol);
 
 ![Plotter faithful](/images/plotter-faithful.png)
 
-## Extra credit
+## Extra credit 1
 
 Create a histogram for just the `xcol` column. Of course, you can specify any column from the CSV file to be the `xcol`. Ask the user for the number of bars to show. Determine the size of each bar by dividing the total range of values by the number of bars.
 
+## Extra credit 2
+
+Create a 3D scatterplot for x, y, z columns. Even better: allow the user to rotate the plot.

@@ -60,6 +60,10 @@ double[] vals = new double[count];
 // ... fill it up, possibly with input from the user ...
 {% endhighlight %}
 
+## Passing arrays to functions
+
+## Returning arrays from functions
+
 ## Example functions
 
 ### Min
