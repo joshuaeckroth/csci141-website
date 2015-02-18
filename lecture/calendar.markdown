@@ -74,7 +74,7 @@ title: Calendar
     <tr>
       <td><b>6</b><br/>2/16 - 2/20</td>
       <td>
-        <a href="/lecture/recursion.html">Recursion</a>
+        <a href="/lecture/arrays.html">Arrays</a>
       </td>
       <td>
         <a href="/homework/homework-6.html">Homework&nbsp;6</a>
@@ -92,6 +92,8 @@ title: Calendar
       <td><b>8</b><br/>3/9 - 3/13</td>
       <td>
         <a href="/lecture/arrays.html">Arrays</a>
+        <br/>
+        <a href="/lecture/recursion.html">Recursion</a>
       </td>
       <td>
         <a href="/homework/homework-8.html">Homework&nbsp;8</a>

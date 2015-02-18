@@ -9,3 +9,8 @@ Skills needed to complete this assignment:
 
 ## Task 1
 
+(fractal generator)
+
+## Extra credit
+
+(L-systems)
