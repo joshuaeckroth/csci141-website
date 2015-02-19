@@ -11,7 +11,7 @@ Practice using arrays by completing the following tasks. Create one class and on
 
 ## Task 1
 
-Write a loop in your `main` function that asks the user for a list of cities (100 or fewer). The user types a blank line (just presses enter) when done entering cities. Then print out all the cities entered, in the order entered.
+Write a loop in your `main` function that asks the user for a list of cities (100 or fewer). The user types a blank line (just presses enter) when done entering cities. Then print out all the cities entered, in the order entered. Only print the values they entered, and not the blank value(s).
 
 ## Task 2
 
