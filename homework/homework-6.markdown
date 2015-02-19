@@ -45,8 +45,8 @@ For example, consider the relation between amount of wind in New York City in mi
 double[] wind = {7.4, 8.0, 12.6, 11.5, 14.3, 14.9, 8.6, 13.8, 20.1, 8.6,
                  6.9, 9.7, 9.2, 10.9, 13.2, 11.5, 12.0, 18.4 11.5, 9.7};
 
-double[] temp = {67, 72, 74, 62, 66, 65, 59, 61, 74, 69, 66, 68, 58, 64,
-                 66, 57, 68, 62, 59, 73};
+double[] temp = {67, 72, 74, 62, 56, 66, 65, 59, 61, 69,
+                 74, 69, 66, 68, 58, 64, 66, 57, 68, 62};
 ```
 
 Their correlation should be about -0.63, meaning if there is more wind, the temperature generally decreases.
