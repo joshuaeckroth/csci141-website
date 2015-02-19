@@ -11,11 +11,11 @@ Practice using arrays by completing the following tasks. Create one class and on
 
 ## Task 1
 
-Write a loop in your `main` function that asks the user for a list of cities. The user types a blank line (just presses enter) when done entering cities. Then print out all the cities entered, in the order entered.
+Write a loop in your `main` function that asks the user for a list of cities (100 or fewer). The user types a blank line (just presses enter) when done entering cities. Then print out all the cities entered, in the order entered.
 
 ## Task 2
 
-Write a loop in your `main` function that asks the user for a list of positive integers. The user types 0 when done entering integers. Then ask the user to type another integer. Finally, print "Found" if that last integer was among those entered previously, or "Not found" if not.
+Write a loop in your `main` function that asks the user for a list of positive integers (100 or fewer). The user types 0 when done entering integers. Then ask the user to type another integer. Finally, print "Found" if that last integer was among those entered previously, or "Not found" if not.
 
 Use a function from the `Arrays` class to perform the search.
 
