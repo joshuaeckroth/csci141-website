@@ -94,6 +94,17 @@ public static void prDoubleArr(double[] vals)
 
 ### Sum
 
+<div>
+$$
+\text{sum} = \sum_i^n x_i,
+$$
+</div>
+
+<p>
+where $x_i$ is the i'th value in the array and $n$ is the length of the array.
+</p>
+
+
 {% highlight java %}
 public static double sum(double[] xs)
 {
@@ -108,6 +119,20 @@ public static double sum(double[] xs)
 
 ### Mean
 
+<p>
+Often known as $\overline{x}$ for an array $x$:
+</p>
+
+<div>
+$$
+\overline{x} = \frac{\sum_i^n x_i}{n},
+$$
+</div>
+
+<p>
+where $x_i$ is the i'th value in the array and $n$ is the length of the array.
+</p>
+
 {% highlight java %}
 public static double mean(double[] xs)
 {
@@ -116,6 +141,20 @@ public static double mean(double[] xs)
 {% endhighlight %}
 
 ### Variance
+
+<p>
+Often known as $s^2$:
+</p>
+
+<div>
+$$
+s^2 = \frac{\sum_i^n (x_i - \overline{x})^2}{n-1},
+$$
+</div>
+
+<p>
+where $x_i$ is the i'th value in the array, $\overline{x}$ is the mean of the array, and $n$ is the length of the array.
+</p>
 
 {% highlight java %}
 public static double variance(double[] xs)
