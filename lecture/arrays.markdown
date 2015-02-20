@@ -62,7 +62,35 @@ double[] vals = new double[count];
 
 ## Passing arrays to functions
 
+See examples below. It's as simple as specifying an array in the parameter list of the function, e.g.
+
+{% highlight java %}
+public static void prDoubleArr(double[] vals)
+{% endhighlight %}
+
 ## Returning arrays from functions
+
+Here is an example that generates a certain number of random doubles:
+
+{% highlight java %}
+// requires import java.util.Random;
+public static double[] makeRandomArray(int howMany)
+{
+    Random r = new Random();
+    double[] xs = new double[howMany];
+    for(int i = 0; i < howMany; i++)
+    {
+        xs[i] = r.nextDouble();
+    }
+    return xs;
+}
+{% endhighlight %}
+
+Use that function like so:
+
+{% highlight java %}
+double[] randVals = makeRandomArray(10);
+{% endhighlight %}
 
 ## Example functions
 
@@ -90,7 +118,55 @@ public static void prDoubleArr(double[] vals)
 
 ### Min
 
+Two approaches: look at every element, or sort the array first.
+
+{% highlight java %}
+public static double min(double[] xs)
+{
+    double m = xs[0];
+    for(int i = 0; i < xs.length; i++)
+    {
+        if(xs[i] < m)
+        {
+            m = xs[i];
+        }
+    }
+    return m;
+}
+
+// requires import java.util.Arrays;
+public static double min2(double[] xs)
+{
+    Arrays.sort(xs);
+    return xs[0];
+}
+{% endhighlight %}
+
 ### Max
+
+Two approaches: look at every element, or sort the array first.
+
+{% highlight java %}
+public static double max2(double[] xs)
+{
+    Arrays.sort(xs);
+    return xs[xs.length-1];
+}
+
+// requires import java.util.Arrays;
+public static double max(double[] xs)
+{
+    double m = xs[0];
+    for(int i = 0; i < xs.length; i++)
+    {
+        if(xs[i] > m)
+        {
+            m = xs[i];
+        }
+    }
+    return m;
+}
+{% endhighlight %}
 
 ### Sum
 
