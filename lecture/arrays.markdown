@@ -244,3 +244,14 @@ public static double variance(double[] xs)
     return s / (xs.length - 1);
 }
 {% endhighlight %}
+
+### Standard deviation
+
+The standard deviation is the square root of variance.
+
+{% highlight java %}
+public static double sd(double[] xs)
+{
+    return Math.sqrt(variance(xs));
+}
+{% endhighlight %}
