@@ -13,7 +13,7 @@ Create a x/y scatter plot program, using Processing and a small library I wrote 
 
 ### Initial step
 
-Download [CSVReader.jar](/CSVReader.jar) and add as an "External JAR" to your project's "Java Build Path", just like we did with processing.jar in the [Processing notes](/lecture/processing-library.html).
+Download [CSVReader.jar](/CSVReader.jar) and add as an "External JAR" to your project's "Java Build Path", just like we did with processing.jar in the [Processing notes](/lecture/processing-library.html). Use `import csci141.CSVReader;` at the top of your file.
 
 Data for plotting will come from a CSV file (comma-separated values). You can download two example files: [sine.csv](/homework/sine.csv) and [faithful.csv](/homework/faithful.csv). You can edit these files in Microsoft Excel or Notepad or Eclipse.
 
