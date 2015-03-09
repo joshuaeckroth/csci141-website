@@ -91,9 +91,7 @@ title: Calendar
     <tr>
       <td><b>8</b><br/>3/9 - 3/13</td>
       <td>
-        <a href="/lecture/arrays.html">Arrays</a>
-        <br/>
-        <a href="/lecture/recursion.html">Recursion</a>
+        <a href="/lecture/arrays.html">Classes</a>
       </td>
       <td>
         <a href="/homework/homework-8.html">Homework&nbsp;8</a>
@@ -102,9 +100,7 @@ title: Calendar
     <tr>
       <td><b>9</b><br/>3/16 - 3/20</td>
       <td>
-        <a href="/lecture/exceptions.html">Exceptions</a>
-        <br/>
-        <a href="/lecture/files.html">Files</a>
+        <a href="/lecture/exceptions.html">Classes</a>
       </td>
       <td>
         <a href="/homework/homework-9.html">Homework&nbsp;9</a>
@@ -119,7 +115,7 @@ title: Calendar
         <br/>
         <strong>3/25: Test 2</strong>
         <br/>
-        3/27: Discuss answers, <a href="/lecture/files.html">Files</a>
+        3/27: Discuss answers, <a href="/lecture/exceptions.html">Exceptions</a>
       </td>
       <td>
         <a href="/homework/homework-10.html">Homework&nbsp;10</a>
@@ -128,6 +124,10 @@ title: Calendar
     <tr>
       <td><b>11</b><br/>3/30 - 4/1</td>
       <td>
+        <a href="/lecture/exceptions.html">Exceptions</a>
+        <br/>
+        <a href="/lecture/files.html">Files</a>
+        <br/>
         <a href="/lecture/events.html">Events</a>
       </td>
       <td>

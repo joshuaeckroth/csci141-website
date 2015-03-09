@@ -10,7 +10,7 @@ Test 2 covers:
 - [Conditionals](/lecture/conditionals.html)
 - [Loops](/lecture/loops.html)
 - [Functions](/lecture/functions.html)
-- [Recursion](/lecture/recursion.html)
 - [Arrays](/lecture/arrays.html)
+- [Classes](/lecture/classes.html)
 
 ## Test 2 review

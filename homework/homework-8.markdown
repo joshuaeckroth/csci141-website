@@ -5,12 +5,8 @@ layout: default
 
 Skills needed to complete this assignment:
 
-- [Arrays](/lecture/arrays.html)
+- [Classes](/lecture/classes.html)
 
 ## Task 1
 
-(fractal generator)
-
-## Extra credit
-
-(L-systems)
+lots of little questions about classes
