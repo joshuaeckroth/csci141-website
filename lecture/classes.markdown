@@ -21,6 +21,8 @@ layout: default
 
 ## Game example from class
 
+![UML](/images/npc-uml.png)
+
 ### NPC.java
 
 {% highlight java %}
@@ -29,12 +31,14 @@ public class NPC {
 	private int health;
 	private int strength;
 	private Location loc;
+	private Weapon weapon;
 
-	public NPC(int newHealth, int newStrength, Location newLoc)
+	public NPC(int newHealth, int newStrength, Location newLoc, Weapon newWeapon)
 	{
 		health = newHealth;
 		strength = newStrength;
 		loc = newLoc;
+		weapon = newWeapon;
 	}
 
 	public int getHealth()
@@ -49,7 +53,8 @@ public class NPC {
 
 	public void attackOther(NPC other)
 	{
-		other.doDamage(strength);
+	    int d = strength * weapon.getDamage();
+		other.doDamage(d);
 	}
 
 	private void doDamage(int amount)
@@ -60,6 +65,11 @@ public class NPC {
 	public void setLocation(Location newLoc)
 	{
 		loc = newLoc;
+	}
+
+	public void setWeapon(Weapon newWeapon)
+	{
+	    weapon = newWeapon;
 	}
 
 	public void goTowards(Location to)
@@ -117,10 +127,44 @@ public class Location {
 }
 {% endhighlight %}
 
+### Weapon.java
+
+{% highlight java %}
+public class Weapon {
+    private int damage;
+    private String name;
+
+    public Weapon(int newDamage, String newName)
+    {
+        damage = newDamage;
+        name = newName;
+    }
+
+    public int getDamage()
+    {
+        return damage;
+    }
+
+    public String getName()
+    {
+        return name;
+    }
+
+    public void setDamage(int newDamage)
+    {
+        damage = newDamage;
+    }
+
+    public void setName(String newName)
+    {
+        name = newName;
+    }
+}
+{% endhighlight %}
+
 ### MainClass.java
 
 {% highlight java %}
-
 public class MainClass {
 
 	public static void main(String[] args) {
@@ -138,8 +182,15 @@ public class MainClass {
 		System.out.println("Is proximate? " +
 				loc1.isProximate(loc2));
 
-		NPC phil = new NPC(100, 5, loc1);
-		NPC sue = new NPC(80, 20, loc2);
+	    Weapon sword = new Weapon();
+        sword.setName("Excalibur");
+        sword.setDamage(10);
+        Weapon dagger = new Weapon();
+        dagger.setName("Prickler");
+        dagger.setDamage(2);
+
+		NPC phil = new NPC(100, 5, loc1, sword);
+		NPC sue = new NPC(80, 20, loc2, dagger);
 		System.out.println("Phil's health: " + phil.getHealth());
 		sue.attackOther(phil);
 		System.out.println("Phil's health: " + phil.getHealth());
