@@ -39,7 +39,7 @@ Create a class to represent a student. This class should not be your main class 
 
 - First name and last name (separately).
 - 800-number ID.
-- Birthdate. Use a variable of type `Calendar` and set it equal to something like this: `birthdate = Calendar.set(1990, 12, 31)` for 12/31/1990.
+- Birthdate. Use a variable of type `Calendar` and set it equal to something like this: `birthdate = GregorianCalendar.getInstance()`, and then in your constructor or "setter" method change the calendar date like so: `birthdate.set(1990, 12, 31)` for 12/31/1990.
 
 That information should be `private` in the class. Create "getters" and "setters" for the data. Create a constructor that initializes the data with arguments given to the constructor.
 
