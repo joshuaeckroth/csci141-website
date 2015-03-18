@@ -15,6 +15,29 @@ Test 2 covers:
 
 ## Test 2 review
 
+### Arrays
+
+Create an array of three integers. Fill it with arbitrary non-zero values.
+
+Suppose you have an integer `n`. Create an array of `double` values, size `n`, and make every element equal to 5.0.
+
+Given an array `ws`, print its size in one line of code (`System.out.println(...)`).
+
+Write a function that computes and returns the following sum, for two `double` arrays of equal length `n`:
+
+<div>
+$$
+s = \sum_i^n (x_i - 2y_i)
+$$
+</div>
+
+Write a function that returns a new integer array of a given size (the size is a parameter), and fills it with zeros.
+
+Assuming the function below exists, write one line of code that uses it properly (saves the returned array, gives appropriate arguments):
+
+{% highlight java %}
+String[] foo(int a, double b, char c, int[] d) { ... }
+{% endhighlight %}
 
 ### Classes
 
