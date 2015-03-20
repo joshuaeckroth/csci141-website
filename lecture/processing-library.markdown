@@ -103,6 +103,48 @@ public class BouncyBall extends PApplet {
 }
 {% endhighlight %}
 
+## Multiple classes with Processing
+
+If you have just one class, that class can `extend PApplet` and you're good to go, as described above.
+
+If you have more classes, and those other classes need to do drawing as well as the main class, then you need to tell the other classes "where" to draw. There is only one window to draw on, one `PApplet` technically, and the other classes need to know about it.
+
+This is accomplished by sending the other classes a pointer to the `PApplet` main class. Here is an example:
+
+{% highlight java %}
+// main class
+public class MainClass extends PApplet {
+    private BadDude burt;
+    
+    public void setup()
+    {
+        // tell BadDude class about 'this', which is a pointer
+        // to the MainClass PApplet.
+        
+        burt = new BadDude(this);
+    }
+}
+
+// bad dude class; note, it does not "extend PApplet"
+public class BadDude {
+    private PApplet parent;  // this is where we save the pointer
+    
+    // the constructor will receive and save the pointer
+    public BadDude(PApplet newParent)
+    {
+        parent = newParent;
+    }
+    
+    // here is a random function in the class that must do drawing
+    public void drawSomething()
+    {
+        // all drawing commands must operate on the 'parent' object
+        parent.fill(255, 0, 255);
+        parent.ellipse(50, 50, 10, 10);
+    }
+}
+{% endhighlight %}
+
 ## Setup functions
 
 These are useful functions to create in `setup()`:

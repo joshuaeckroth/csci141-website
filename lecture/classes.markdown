@@ -362,6 +362,9 @@ public class Weapon {
         damage = newDamage;
         name = newName;
     }
+    
+    public Weapon()
+    { }
 
     public int getDamage()
     {
