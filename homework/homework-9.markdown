@@ -87,7 +87,7 @@ public class Weapon {
     {
         name = newName;
     }
-    public void toString()
+    public String toString()
     {
         return "Weapon: " + name;
     }
