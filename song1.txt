@@ -1,0 +1,55 @@
+250 kick
+250 hat
+250 kick-light
+0 snare-rimshot
+250 hat-2
+250 kick
+250 hat
+250 kick-light
+0 snare-rimshot
+0 ride-bell-loud
+
+250 hat-3
+250 kick
+250 hat-2
+0 snare-rim
+150 tom
+100 kick
+150 tom
+100 tom
+0 hat-open-2
+0 ride-bell
+50 tom-light
+100 tom-light
+100 kick-light
+0 snare-rimshot
+0 splash-a-custom-10-high-vol
+
+250 kick
+250 hat
+250 kick-light
+0 snare-rimshot
+150 pick-chkk
+100 hh-a-custom-foot1
+250 kick
+250 hat
+0 picked-slide
+250 kick-light
+0 snare
+0 hh-a-custom-full-open-hard
+200 splash-a-custom-10-high-vol
+
+50 hat-3
+250 kick
+250 hat-2
+0 snare-rim
+250 kick
+150 tom
+100 tom-light
+0 hat-open-2
+0 ride-bell
+250 kick
+0 snare-rimshot-2
+0 splash-a-custom-10-high-vol
+
+1000 splash-zxt-flash-10-low-vol
