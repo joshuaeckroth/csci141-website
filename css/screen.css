@@ -92,6 +92,10 @@ img {
     border: 0;
 }
 
+img.emoji {
+    display: inline;
+}
+
 iframe {
     display: block;
     margin: 0 auto;
