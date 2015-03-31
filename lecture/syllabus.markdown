@@ -17,7 +17,7 @@ Work hard in this class and you should be able to:
 
 - Eliz Hall 214-9, 386-740-2519
 
-- Office hours: Mon: 1:30-2:30, Tue: 12-2, Thur: 1-2
+- Office hours: Mon: 2:30-3:30, Tue: 12-2, Thur: 1-2
 
 ## Text book
 

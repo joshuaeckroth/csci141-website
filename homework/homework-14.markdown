@@ -3,14 +3,18 @@ title: Homework 14
 layout: default
 ---
 
-Skills needed to complete this assignment:
+The final exam covers:
 
-- [Networking](/lecture/networking.html)
+- [Variables, types, scope](/lecture/variables-types-scope.html)
+- [Simple input/output](/lecture/simple-io.html)
+- [Conditionals](/lecture/conditionals.html)
+- [Loops](/lecture/loops.html)
+- [Functions](/lecture/functions.html)
+- [Recursion](/lecture/recursion.html)
+- [Arrays](/lecture/arrays.html)
+- [Exceptions](/lecture/exceptions.html)
+- [Files](/lecture/files.html)
+- [Classes](/lecture/classes.html)
+- [Threads](/lecture/threads.html)
 
-## Task 1
-
-(networked game world)
-
-## Extra credit
-
-(include chat client)
+## Final review

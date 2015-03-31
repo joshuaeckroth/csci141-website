@@ -118,7 +118,6 @@ title: Calendar
         3/27: Discuss answers, <a href="/lecture/exceptions.html">Exceptions</a>
       </td>
       <td>
-        <a href="/homework/homework-10.html">Homework&nbsp;10</a>
       </td>
     </tr>
     <tr>
@@ -127,11 +126,9 @@ title: Calendar
         <a href="/lecture/exceptions.html">Exceptions</a>
         <br/>
         <a href="/lecture/files.html">Files</a>
-        <br/>
-        <a href="/lecture/events.html">Events</a>
       </td>
       <td>
-        <a href="/homework/homework-11.html">Homework&nbsp;11</a>
+        <a href="/homework/homework-10.html">Homework&nbsp;10</a>
       </td>
     </tr>
     <tr>
@@ -140,7 +137,7 @@ title: Calendar
         <a href="/lecture/classes.html">Classes</a>
       </td>
       <td>
-        <a href="/homework/homework-12.html">Homework&nbsp;12</a>
+        <a href="/homework/homework-11.html">Homework&nbsp;11</a>
       </td>
     </tr>
     <tr>
@@ -149,7 +146,7 @@ title: Calendar
         <a href="/lecture/threads.html">Threads</a>
       </td>
       <td>
-        <a href="/homework/homework-13.html">Homework&nbsp;13</a>
+        <a href="/homework/homework-12.html">Homework&nbsp;12</a>
       </td>
     </tr>
     <tr>
@@ -158,7 +155,7 @@ title: Calendar
         <a href="/lecture/networking.html">Networking</a>
       </td>
       <td>
-        <a href="/homework/homework-14.html">Homework&nbsp;14</a>
+        <a href="/homework/homework-13.html">Homework&nbsp;13</a>
       </td>
     </tr>
     <tr>
@@ -166,10 +163,10 @@ title: Calendar
       <td>
         4/29: Final review in-class
         <br/>
-        Note that <a href="/homework/homework-15.html">Homework&nbsp;15</a> is the final exam review
+        Note that <a href="/homework/homework-14.html">Homework&nbsp;14</a> is the final exam review
       </td>
       <td>
-        <a href="/homework/homework-15.html">Homework&nbsp;15</a>
+        <a href="/homework/homework-14.html">Homework&nbsp;14</a>
       </td>
     </tr>
     <tr>
