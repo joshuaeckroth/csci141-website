@@ -23,21 +23,30 @@ ul {
     margin: 0 0 1em 0;
 }
 h1 {
-    font: italic normal 2.2em Georgia, serif;
+    font: normal 2.4em Georgia, serif;
     letter-spacing: 1px;
     margin-top: 0.5em;
     margin-bottom: 1em;
     color: #7D775C;
 }
 h2 { 
-    font: italic normal 1.6em Georgia, serif;
+    font: normal bold 1.6em Georgia, serif;
+    letter-spacing: 1px; 
+    margin-top: 1em;
+    margin-bottom: 1em; 
+    color: #7D775C;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #7d775c;
+}
+h3 {
+    font: normal bold 1.2em Georgia, serif;
     letter-spacing: 1px; 
     margin-top: 1em;
     margin-bottom: 1em; 
     color: #7D775C;
 }
-h3 {
-    font: italic normal 1.2em Georgia, serif;
+h4 {
+    font: normal bold 1.1em Georgia, serif;
     letter-spacing: 1px; 
     margin-top: 1em;
     margin-bottom: 1em; 
