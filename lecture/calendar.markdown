@@ -134,7 +134,7 @@ title: Calendar
     <tr>
       <td><b>12</b><br/>4/6 - 4/10</td>
       <td>
-        <a href="/lecture/classes.html">Classes</a>
+        <a href="/lecture/inheritance.html">Inheritance</a>
       </td>
       <td>
         <a href="/homework/homework-11.html">Homework&nbsp;11</a>
