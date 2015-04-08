@@ -64,6 +64,108 @@ public Rectangle(double newX, double newY, double newWidth, double newHeight) {
 }
 {% endhighlight %}
 
+## Polymorphism
+
+Java lets you create an object of a subclass type but save it into a variable with ancestor-class type (could be direct parent, or parent's parent, etc.). For example:
+
+{% highlight java %}
+Shape s = new Rectangle(5, 2, 10, 11);
+{% endhighlight %}
+
+Notice the shape `s` is really a `Rectangle` but we're saving it as a `Shape` type of object. It does not "change" into a `Shape` when we do this; it's still a `Rectangle`. However, now we can only execute `Shape` methods on `s`. So this fails:
+
+{% highlight java %}
+// this FAILS; cannot call Rectangle methods since the type of s is Shape
+System.out.println(s.getWidth());
+
+// but this works, since getX() is a Shape method
+System.out.println(s.getX());
+{% endhighlight %}
+
+However, suppose we define a method in `Shape` that is redefined (overridden) in `Rectangle`. Then Java will use the more specific method when it exists.
+
+{% highlight java %}
+public class Shape {
+  public double area() {
+    return -1.0; // no meaningful "area" of a generic shape
+  }
+}
+
+public class Rectangle extends Shape {
+  public double area() {
+    return width * height;
+  }
+}
+
+public class Ellipse extends Shape {
+  public double area() {
+    return Math.PI * majorAxis * minorAxis;
+  }
+}
+{% endhighlight %}
+
+Now if we have a `Rectangle` or `Ellipse`, and we execute the `area` method, it will use the right method even when we use a generic `Shape` variable:
+
+{% highlight java %}
+Shape s1 = new Rectangle(5, 2, 10, 11);
+Shape s2 = new Ellipse(5, 2, 9.2, 3.3);
+
+// This actually executes Rectangle's area() method
+System.out.println("s1 area = " + s1.area());
+
+// This actually executes Ellipse's area() method
+System.out.println("s2 area = " + s2.area());
+
+// Now let's make a truly generic shape
+Shape s3 = new Shape(5, 2);
+
+// This actually executes Shape's area() method (which returns -1.0)
+System.out.println("s3 area = " + s3.area());
+{% endhighlight %}
+
+What's the benefit of saving a true `Rectangle` into a generic `Shape` variable? Remember how arrays can only store one type of value? If you want to mix rectangles, ellipses, and triangles in a single array, you're stuck... unless you call them all "shapes" and only put "shapes" in the array:
+
+{% highlight java %}
+Shape[] myShapes = new Shape[3];
+myShapes[0] = new Rectangle(5, 2, 10, 11);
+myShapes[1] = new Ellipse(5, 2, 9.2, 3.3);
+myShapes[2] = new Triangle(5, 2, 18, 22, 0.58);
+
+// Let's print all of their areas. Note, the specific Rectangle/Ellipse/Triangle
+// area() methods will be executed when appropriate!
+for(int i = 0; i < myShapes.length; i++)
+{
+  System.out.println("Area of shape " + (i+1) + " is = " + myShapes[i].area());
+}
+{% endhighlight %}
+
+Another case where you'd use this technique is functions. Suppose your function can work with any shape:
+
+{% highlight java %}
+public void describeSingleShape(Shape someShape)
+{
+  System.out.println("I have a shape.");
+  System.out.println("It is located at x = " + someShape.getX() + " and y = " + someShape.getY());
+  System.out.println("It is a beautiful shape (surely).");
+  System.out.println("Its true type is " + someShape.getClass());
+  System.out.println("And its area is " + someShape.area());
+  System.out.println("What a phenomenal shape, indeed.");
+}
+{% endhighlight %}
+
+Here is an example output from that function:
+
+```
+I have a shape.
+It is located at x = 5.0 and y = 2.0
+It is a beautiful shape (surely).
+Its true type is class Rectangle
+And its area is 110.0
+What a phenomenal shape, indeed.
+```
+
+The technique described in this section is called "polymorphism" because objects are acting like different kinds of things in different situations. In the array above, rectangles, ellipses, and triangles are acting as generic shapes. But they're not really generic shapes, and Java knows that, so the appropriate `area()` methods are executed.
+
 ## Eclipse assistance
 
 ### Generate getters/setters
