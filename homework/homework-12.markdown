@@ -5,7 +5,7 @@ layout: default
 
 Skills needed to complete this assignment:
 
-- [Classes](/lecture/classes.html)
+- [Swing](/lecture/swing.html)
 
 ## Task 1
 

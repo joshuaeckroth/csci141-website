@@ -143,7 +143,7 @@ title: Calendar
     <tr>
       <td><b>13</b><br/>4/13 - 4/17</td>
       <td>
-        <a href="/lecture/threads.html">Threads</a>
+        <a href="/lecture/swing">Swing GUIs</a>
       </td>
       <td>
         <a href="/homework/homework-12.html">Homework&nbsp;12</a>
@@ -152,7 +152,7 @@ title: Calendar
     <tr>
       <td><b>14</b><br/>4/20 - 4/24</td>
       <td>
-        <a href="/lecture/networking.html">Networking</a>
+        <a href="/lecture/swing">Swing GUIs</a>
       </td>
       <td>
         <a href="/homework/homework-13.html">Homework&nbsp;13</a>
@@ -163,10 +163,9 @@ title: Calendar
       <td>
         4/29: Final review in-class
         <br/>
-        Note that <a href="/homework/homework-14.html">Homework&nbsp;14</a> is the final exam review
+        Note that <a href="/homework/homework-13.html">Homework&nbsp;13</a> is the final exam review
       </td>
       <td>
-        <a href="/homework/homework-14.html">Homework&nbsp;14</a>
       </td>
     </tr>
     <tr>

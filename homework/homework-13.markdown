@@ -3,15 +3,14 @@ title: Homework 13
 layout: default
 ---
 
-Skills needed to complete this assignment:
+The final exam covers:
 
-- [Arrays](/lecture/arrays.html)
-- [Threads](/lecture/threads.html)
+- [Classes](/lecture/classes.html)
+- [Exceptions](/lecture/exceptions.html)
+- [Files](/lecture/files.html)
+- [Inheritance](/lecture/inheritance.html)
+- [Interfaces](/lecture/interfaces.html)
+- [Swing](/lecture/swing.html)
 
-## Task 1
 
-(termites collecting sand)
-
-## Extra credit
-
-(ants finding food)
+## Final review
