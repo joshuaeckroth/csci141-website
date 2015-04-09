@@ -76,3 +76,7 @@ Joint account for John Doe and Jane Doe. Balance = $55.22.
 ```
 
 Do not modify `BankAccount` to accomplish this task. Only add code in `JointAccount`, and only in the two methods shown (where the `TODO ...` appears).
+
+## Extra credit
+
+Add more code to the classes in Task 1. Create at least three new methods (which are appropriate for the classes in which they appear), and test each of them in the `main` function. One of these tests must use polymorphism.
