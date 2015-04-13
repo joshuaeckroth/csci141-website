@@ -9,3 +9,6 @@ Skills needed to complete this assignment:
 
 ## Task 1
 
+Recreate this layout. There are no "events" to capture.
+
+![Gui 1](/homework/gui-1.png)

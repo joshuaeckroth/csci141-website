@@ -3,14 +3,9 @@ title: Homework 13
 layout: default
 ---
 
-The final exam covers:
+Skills needed to complete this assignment:
 
-- [Classes](/lecture/classes.html)
-- [Exceptions](/lecture/exceptions.html)
-- [Files](/lecture/files.html)
-- [Inheritance](/lecture/inheritance.html)
-- [Interfaces](/lecture/interfaces.html)
 - [Swing](/lecture/swing.html)
 
+## Task 1
 
-## Final review
