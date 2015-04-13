@@ -10,6 +10,7 @@ public static void gui() {
 	JFrame frame = new JFrame("My Frame!");
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.setSize(250,250);
+    frame.pack();
     frame.setVisible(true);
 }
 
