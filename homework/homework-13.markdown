@@ -59,3 +59,40 @@ Here is a video of the termites in action. A termite is drawn as a white circle 
 <div style="text-align: center">
 <iframe src="https://player.vimeo.com/video/125040847" width="500" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
+
+## Extra credit: Ants
+
+You can do this task *instead of* the termite task. You will get extra points because this task is harder.
+
+Program a simulation of ants finding food. Ants that have food in their mouths leave a pheromone trail. Ants walking around randomly (with or without food) will follow a pheromone trail if they discover one. The ants "know" where the nest is, so they know how to turn towards it and walk that way.
+
+Food starts in several piles in random places. The nest starts somewhere and the ants know where it is.
+
+At every time step, these are the rules for every individual ant:
+
+- if not carrying food,
+  - if standing on top of food, pick it up and turn 180-degrees
+  - else, if standing on detectable pheromone, turn 45-degrees left or right depending on which nearby cell has more pheromone
+- if carrying food,
+  - if on top of nest, drop food and turn 180-degrees
+  - else, drop some pheromone and rotate towards direction of nest
+- in either case, turn a small random amount left or right and walk a small bit
+
+Also at every time step, the pheromone on every grid cell decreases by:
+
+```
+pheromone = pheromone * (100.0 - evaporation_rate) / 100.0
+```
+
+where `evaporation_rate` is something like 10.0.
+
+The pheromone is also diffused to nearby cells at every time step. For each cell x,y, the pheromone value at x,y is decreased by 50%, and each of the eight neighbors of x,y get 1/8 of the original value.
+
+You may choose to draw a cell a different color that corresponds to how much pheromone is on that cell. It's a good idea to make sure your code is working.
+
+Here is a demo. Note, you still need the "start" and "stop" buttons, even though they are not shown in the demo.
+
+<div style="text-align: center">
+<iframe src="https://player.vimeo.com/video/125240386" width="500" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+
