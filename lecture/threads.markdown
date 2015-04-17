@@ -82,3 +82,99 @@ try {
 {% endhighlight %}
 
 You would put this sleep code in your infinite loop in `run()`.
+
+## Example with start/stop buttons
+
+Main.java:
+
+{% highlight java %}
+import java.awt.BorderLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
+
+
+public class Main {
+	public static void gui() {
+		final MyThread mythread = new MyThread();
+		JFrame frame = new JFrame("My Frame!");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(250,250);
+		JPanel win = new JPanel(); // or JFrame
+		win.setLayout(new BorderLayout());
+		// use NORTH or SOUTH or EAST or WEST or CENTER
+		JButton startButton = new JButton("start");
+		startButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				mythread.start();
+			}
+		});
+		JButton stopButton = new JButton("stop");
+		stopButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				mythread.stop();
+			}
+		});
+		win.add(startButton, BorderLayout.WEST);
+		win.add(stopButton, BorderLayout.EAST);
+		frame.add(win);
+		frame.pack();
+		frame.setVisible(true);
+	}
+
+	public static void main(String[] args)
+	{
+		SwingUtilities.invokeLater(new Runnable() {
+			public void run() {
+				gui();
+			}
+		});
+	}
+}
+{% endhighlight %}
+
+MyThread.java:
+
+{% highlight java %}
+public class MyThread implements Runnable {
+	private Thread runner;
+	private int i = 0;
+
+	public void start()
+	{
+		if(runner == null)
+		{
+			runner = new Thread(this);
+			runner.start();
+		}
+	}
+
+	@SuppressWarnings("deprecation")
+	public void stop()
+	{
+		if(runner != null)
+		{
+			runner.stop();
+			runner = null;
+		}
+	}
+
+	public void run()
+	{
+		while(true)
+		{
+			System.out.println("Iteration " + i);
+			i++;
+			try {
+				Thread.sleep(100);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}
+{% endhighlight %}
