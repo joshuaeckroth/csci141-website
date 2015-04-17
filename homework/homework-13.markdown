@@ -13,7 +13,7 @@ Create a simulation of "termites." A bunch of termites live on a grid that has s
 
 Each termite behaves independently and identically. They do not communicate. They only pickup and drop a piece of sand. When a termite picks up a piece of sand, it is removed from the grid (that pixel turns black). When a piece of sand is dropped, wherever the termite is standing then turns yellow and the grid cell is recorded as having sand.
 
-You must have a "stop" and "start" button. See the notes about [threads](/lecture/threads.html) for some guidance about how that might work.
+You must have a "start" and "stop" button. These buttons tell the center panel to start/stop the animation and termite updates. See the notes about [threads](/lecture/threads.html) for some guidance about how that might work.
 
 Termites move according to a speed and angle (in radians). Here is a move method, so you don't need to worry about the trigonometry. This move method also supports wrap around.
 
@@ -53,6 +53,10 @@ boolean b =  r.nextBoolean(); // get a random true/false
 int x = r.nextInt(100); // get a random integer (0-99)
 double y = r.nextDouble(); // get a random double (0.0-1.0)
 {% endhighlight %}
+
+If it helps, here is an overview of my classes:
+
+![Termites UML](/images/termites-uml.png)
 
 Here is a video of the termites in action. A termite is drawn as a white circle if it's not currently holding sand, otherwise it is drawn as a green circle (holding sand).
 
