@@ -58,6 +58,84 @@ If it helps, here is an overview of my classes:
 
 ![Termites UML](/images/termites-uml.png)
 
+Here are the `start()`, `stop()`, and `run()` methods of the `TermitesPanel` class:
+
+{% highlight java %}
+public void start()
+{
+	if(runner == null)
+	{
+		runner = new Thread(this);
+		runner.start();
+	}
+}
+
+@SuppressWarnings("deprecation")
+public void stop()
+{
+	if(runner != null)
+	{
+		runner.stop();
+		runner = null;
+	}
+}
+
+public void run()
+{
+	while(true)
+	{
+		for(int i = 0; i < termites.length; i++)
+		{
+			termites[i].act();
+		}
+		repaint();
+		try {
+			Thread.sleep(20);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+}
+{% endhighlight %}
+
+### The roles of each class
+
+#### Main
+
+Main does the typical GUI startup from the [Swing](/lecture/swing.html) notes in `main()` and `gui()`.
+
+In `gui()`, a frame is created with a layout. Two buttons are added to the top, and a `TermitesPanel` is added in the bottom.
+
+The buttons have "listeners" so that clicking "start" runs `start()` in `TermitesPanel` and clicking "stop" runs `stop()` in `TermitesPanel`.
+
+The `gui()` function also needs to create the grid and an array of `Termite` objects (any number of them, say 20). The grid and the termites array are given to the constructor for `TermitesPanel`.
+
+#### Grid
+
+The grid class only handles a 2D array of booleans. It does not draw anything and it knows nothing about termites. It provides methods for picking up and dropping sand. Pickup sets the grid at x,y to false. Drop sets the grid at x,y to true. `hasSand()` returns true or false depending on whether the grid has sand at that location.
+
+The constructor for `Grid` will need to set up the array and set some values as true and most as false. You can do this with random numbers.
+
+#### Termite
+
+Each termite has an x,y location and knows if it is holding sand or not. The termite code does not do any drawing (no GUI stuff).
+
+The `move()` method is given above.
+
+The `act()` method has those rules defined above. The termite moves around by following these rules in its `act()` method.
+
+#### TermitesPanel
+
+This class is the most complex one and does two things: draws a grid, and tells each termite to act.
+
+In the `paintComponent()` method, the grid is drawn first. For every pixel in the panel, if the grid has sand there, a tiny yellow rectangle is drawn, otherwise a tiny black rectangle is drawn.
+
+Then the termites are drawn. For every termite in the array, draw an oval at that termite's x,y. You don't have to change its color, but you can (if you wish) draw it one color if it is holding sand, and another color if it is not.
+
+The `start()`, `stop()`, and `run()` methods are given above. The `run()` method is the interesting one. Forever (`while(true)`), it tells each termite to act, and then redraws the panel and sleeps for 20 milliseconds.
+
+#### Video
+
 Here is a video of the termites in action. A termite is drawn as a white circle if it's not currently holding sand, otherwise it is drawn as a green circle (holding sand).
 
 <div style="text-align: center">
