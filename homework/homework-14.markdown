@@ -48,25 +48,73 @@ Create the full class for the UML below. Do not create any methods not listed. U
 
 ### Inheritance
 
-Create a template for each of the classes in this UML diagram:
+Create a template for each of the classes in the UML diagram below. Use Eclipse to generate getters/setters/toString and constructors for each class.
 
 ![Persons, students, etc.](/images/person-faculty-staff.png)
 
-indicate which fields/methods are inherited (from one level)
+Given these classes, list the private and public fields and methods in the class `Baz` (take note of which public fields/methods are inherited).
 
-indicate which fields/methods are inherited (from two levels)
+{% highlight java %}
+public class Foo {
+  public int x;
+  private int y;
+  public void a();
+  private void b();
+}
 
-create a new method such that polymorphism works
+public class Bar extends Foo {
+  public int z;   private void c();
+}
+
+public class Baz extends Bar {
+  private int w;
+  private int v;
+  public int u;
+  public void d();
+  private void e();
+}
+{% endhighlight %}
+
+Given the code below, what happens when `x.speak()` is executed? Take note of polymorphism.
+
+{% highlight java %}
+public class A {
+  public void speak() {
+    System.out.println("Waaah");
+  }
+}
+
+public class B extends A {
+  public void speak() {
+    System.out.println("Hello dear.");
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    A x = new B();
+    x.speak();
+  }
+}
+{% endhighlight %}
 
 ### Interfaces
 
-write a class template that "implements" some given interface
+Given the interface below, create a class template (just an outline, no code for any methods) that implements the interface.
+
+{% highlight java %}
+public interface Collection {
+  void add();
+  void remove();
+  boolean hasItem(Object item);
+}
+{% endhighlight %}
 
 ### Swing
 
-recreate a certain layout
+Recreate this layout:
 
-create a button that responds to events
+![Swing layout](/images/swing-layout-final-review.png)
 
-create a custom drawing panel
+Create a simple GUI with a single button that changes the button text (to whatever, using `setText()`) when it's clicked.
 
