@@ -3,6 +3,7 @@ title: Notes from class
 layout: default
 ---
 
+{% comment %}
 ## Processing example, wrap-around dots
 
 {% highlight java %}
@@ -67,3 +68,4 @@ public class Euler2 {
 	}
 }
 {% endhighlight %}
+{% endcomment %}
