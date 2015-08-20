@@ -3,103 +3,80 @@ title: Homework 9
 layout: default
 ---
 
-Test 2 covers:
+Skills needed to complete this assignment:
 
-- [Arrays](/lecture/arrays.html)
-- [Classes](/lecture/classes.html)
+- [Inheritance](/lecture/inheritance.html)
 
-## Test 2 review
+## Task 1
 
-### Arrays
+Create classes that represent this hierarchy:
 
-Create an array of three integers. Fill it with arbitrary non-zero values.
+![Thing, food, armor, etc.](/images/thing-food-armor-etc.png)
 
-Suppose you have an integer `n`. Create an array of `double` values, size `n`, and make every element equal to 5.0.
+Use Eclipse functionality to create constructors and getters/setters for all the fields, as well as `toString` methods. Do not customize the generated methods. Do this for every class.
 
-Given an array `ws`, print its size in one line of code (`System.out.println(...)`).
+## Task 2
 
-Write a function that computes and returns the following sum, for two `double` arrays of equal length `n`:
+Describe, in English but referring to Java terminology and examples, how polymorphism works (2-4 sentences).
 
-<div>
-$$
-s = \sum_i^n (x_i - 2y_i)
-$$
-</div>
+## Task 3
 
-Write a function that returns a new integer array of a given size (the size is a parameter), and fills it with zeros.
-
-Assuming the function below exists, write one line of code that uses it properly (saves the returned array, gives appropriate arguments):
+Create two classes: `Foo` and `Bar`, such that `Bar` is a subclass of `Foo`. Create method in both called `go()` so that the following polymorphism works:
 
 {% highlight java %}
-String[] foo(int a, double b, char c, int[] d) { ... }
+Foo a = new Foo();
+a.go();  // prints "Foo go!"
+Bar b = new Bar();
+b.go();  // prints "Bar go!"
+Foo c = new Bar();
+c.go();  // prints "Bar go!"
 {% endhighlight %}
 
-### Classes
+## Task 4
 
-Create an `Ellipse` class with a "major axis" field, "minor axis" field, and "area" method, calculated as `pi*major_axis*minor_axis`. Include a constructor that lets you set major/minor axis.
-
-Assuming the class below exists and is fully defined, create a new instance of the class using the constructor (and arbitrary arguments), then execute the `bar` method on that new instance, and also print the instance.
+Suppose you have these two classes:
 
 {% highlight java %}
-public class Foo {
-    // ... private fields
+public class BankAccount {
+  private double balance;
+  private String owner;
+  
+  public BankAccount(double balance, String owner) {
+    this.balance = balance;
+    this.owner = owner;
+  }
+  
+  public String getOwner() {
+    return owner;
+  }
+  
+  public double getBalance() {
+    return balance;
+  }
+}
 
-    public Foo(int a, String b)
-    { ... }
-
-    public void bar()
-    { ... }
-
-    public String toString()
-    { ... }
+public class JointAccount extends BankAccount {
+  private String name1;
+  private String name2;
+  
+  public JointAccount(double balance, String name1, String name2) {
+    // TODO ...
+  }
+  
+  public String toString() {
+    // TODO ...
+  }
 }
 {% endhighlight %}
 
-In the following class definition, label/list these features: the constructor, all methods (not including the constructor), all fields.
+Finish the code for `JointAccount` so that the constructor calls the parent's constructor with `owner` equal to `(name1 + "&" + name2)` and so that the `toString()` method prints something like:
 
-{% highlight java %}
-public class Weapon {
-    private int damage;
-    private String name;
+```
+Joint account for John Doe and Jane Doe. Balance = $55.22.
+```
 
-    public Weapon(int newDamage, String newName)
-    {
-        damage = newDamage;
-        name = newName;
-    }
+Do not modify `BankAccount` to accomplish this task. Only add code in `JointAccount`, and only in the two methods shown (where the `TODO ...` appears).
 
-    public int getDamage()
-    {
-        return damage;
-    }
+## Extra credit
 
-    public String getName()
-    {
-        return name;
-    }
-
-    public void setDamage(int newDamage)
-    {
-        damage = newDamage;
-    }
-
-    public void setName(String newName)
-    {
-        name = newName;
-    }
-    public String toString()
-    {
-        return "Weapon: " + name;
-    }
-}
-{% endhighlight %}
-
-Create a very simple class definition so that this line of code works (note, there are many possible answers):
-
-{% highlight java %}
-Vehicle myBabysHonda = new Vehicle("Honda", "Accord", 2014, 20414.00);
-{% endhighlight java %}
-
-Write a class definition (but no code in the methods) that satisfies this UML diagram:
-
-![File UML](/images/file-uml.png)
+Add more code to the classes in Task 1. Create at least three new methods (which are appropriate for the classes in which they appear), and test each of them in the `main` function. One of these tests must use polymorphism.

@@ -13,7 +13,7 @@ title: Calendar
   </thead>
   <tbody>
     <tr>
-      <td><b>1</b><br/>1/12 - 1/16</td>
+      <td><b>1</b><br/>8/21 - 8/28</td>
       <td>
         <a href="/lecture/syllabus.html">Syllabus</a>
         <br/>
@@ -32,14 +32,14 @@ title: Calendar
       <td><a href="/homework/homework-1.html">Homework&nbsp;1</a></td>
     </tr>
     <tr>
-      <td><b>2</b><br/>1/21 - 1/23</td>
+      <td><b>2</b><br/>8/31 - 9/4</td>
       <td>
         <a href="/lecture/loops.html">Loops</a>
       </td>
       <td><a href="/homework/homework-2.html">Homework&nbsp;2</a></td>
     </tr>
     <tr>
-      <td><b>3</b><br/>1/26 - 1/30</td>
+      <td><b>3</b><br/>9/9 - 9/11</td>
       <td>
         <a href="/lecture/processing-library.html">Processing library</a>
       </td>
@@ -48,130 +48,132 @@ title: Calendar
       </td>
     </tr>
     <tr>
-      <td><b>4</b><br/>2/2 - 2/6</td>
+      <td><b>4</b><br/>9/14 - 9/18</td>
       <td>
         <a href="/lecture/functions.html">Functions</a>
+        <br/>
+        9/18: Test 1 review in-class
+        <br/>
+        Note that <a href="/homework/homework-4.html">Homework&nbsp;4</a> is a test review
       </td>
       <td>
         <a href="/homework/homework-4.html">Homework&nbsp;4</a>
       </td>
     </tr>
     <tr>
-      <td><b>5</b><br/>2/9 - 2/13</td>
+      <td><b>5</b><br/>9/21 - 9/25</td>
       <td>
-        2/9: Test 1 review in-class
+        <strong>9/21: Test 1</strong>
         <br/>
-        Note that <a href="/homework/homework-4.html">Homework&nbsp;4</a> is a test review
-        <br/>
-        <strong>2/11: Test 1</strong>
-        <br/>
-        2/13: Discuss answers, <a href="/lecture/functions.html">Functions</a>
+        9/23: Discuss answers, <a href="/lecture/functions.html">Functions</a>
+      </td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td><b>6</b><br/>9/28 - 10/2</td>
+      <td>
+        <a href="/lecture/arrays.html">Arrays</a>
       </td>
       <td>
         <a href="/homework/homework-5.html">Homework&nbsp;5</a>
       </td>
     </tr>
     <tr>
-      <td><b>6</b><br/>2/16 - 2/20</td>
+      <td><b>7</b><br/>10/5 - 10/7</td>
       <td>
         <a href="/lecture/arrays.html">Arrays</a>
-      </td>
       <td>
         <a href="/homework/homework-6.html">Homework&nbsp;6</a>
       </td>
     </tr>
     <tr>
-      <td><b>7</b><br/>2/23 - 2/27</td>
+      <td><b>8</b><br/>10/12 - 10/16</td>
       <td>
-        <a href="/lecture/arrays.html">Arrays</a>
+        <a href="/lecture/classes.html">Classes</a>
+      </td>
       <td>
         <a href="/homework/homework-7.html">Homework&nbsp;7</a>
       </td>
     </tr>
     <tr>
-      <td><b>8</b><br/>3/9 - 3/13</td>
+      <td><b>9</b><br/>10/19 - 10/23</td>
       <td>
-        <a href="/lecture/arrays.html">Classes</a>
+        <a href="/lecture/classes.html">Classes</a>
+        <br/>
+        <strong>No class Fri, 10/23</strong>
+      </td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td><b>10</b><br/>10/26 - 10/30</td>
+      <td>
+        <strong>No class Mon, 10/26</strong>
+        <br/>
+        <a href="/lecture/exceptions.html">Exceptions</a>
+        <br/>
+        10/30: Test 2 review in-class
+        <br/>
+        Note that <a href="/homework/homework-8.html">Homework&nbsp;8</a> is a test review
+        <br/>
       </td>
       <td>
         <a href="/homework/homework-8.html">Homework&nbsp;8</a>
       </td>
     </tr>
     <tr>
-      <td><b>9</b><br/>3/16 - 3/20</td>
+      <td><b>11</b><br/>11/2 - 11/6</td>
       <td>
-        <a href="/lecture/exceptions.html">Classes</a>
+        <strong>11/2: Test 2</strong>
+        <br/>
+        11/4: Discuss answers, <a href="/lecture/files.html">Files</a>
+      </td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td><b>12</b><br/>11/9 - 11/13</td>
+      <td>
+        <a href="/lecture/inheritance.html">Inheritance</a>
       </td>
       <td>
         <a href="/homework/homework-9.html">Homework&nbsp;9</a>
       </td>
     </tr>
     <tr>
-      <td><b>10</b><br/>3/23 - 3/27</td>
+      <td><b>13</b><br/>11/16 - 11/20</td>
       <td>
-        3/23: Test 2 review in-class
-        <br/>
-        Note that <a href="/homework/homework-9.html">Homework&nbsp;9</a> is a test review
-        <br/>
-        <strong>3/25: Test 2</strong>
-        <br/>
-        3/27: Discuss answers, <a href="/lecture/exceptions.html">Exceptions</a>
-      </td>
-      <td>
-      </td>
-    </tr>
-    <tr>
-      <td><b>11</b><br/>3/30 - 4/1</td>
-      <td>
-        <a href="/lecture/exceptions.html">Exceptions</a>
-        <br/>
-        <a href="/lecture/files.html">Files</a>
+        <a href="/lecture/swing">Swing GUIs</a>
       </td>
       <td>
         <a href="/homework/homework-10.html">Homework&nbsp;10</a>
       </td>
     </tr>
     <tr>
-      <td><b>12</b><br/>4/6 - 4/10</td>
+      <td><b>14</b><br/>11/23 - 11/25</td>
       <td>
-        <a href="/lecture/inheritance.html">Inheritance</a>
+        <a href="/lecture/swing">Swing GUIs</a>
       </td>
       <td>
         <a href="/homework/homework-11.html">Homework&nbsp;11</a>
       </td>
     </tr>
     <tr>
-      <td><b>13</b><br/>4/13 - 4/17</td>
+      <td><b>15</b><br/>11/30 - 12/4</td>
       <td>
-        <a href="/lecture/swing">Swing GUIs</a>
+        12/4: Final review in-class
+        <br/>
+        Note that <a href="/homework/homework-12.html">Homework&nbsp;12</a> is the final exam review
       </td>
       <td>
         <a href="/homework/homework-12.html">Homework&nbsp;12</a>
       </td>
     </tr>
     <tr>
-      <td><b>14</b><br/>4/20 - 4/24</td>
+      <td><b>16</b><br/>12/7</td>
       <td>
-        <a href="/lecture/swing">Swing GUIs</a>
-      </td>
-      <td>
-        <a href="/homework/homework-13.html">Homework&nbsp;13</a>
-      </td>
-    </tr>
-    <tr>
-      <td><b>15</b><br/>4/27 - 4/29</td>
-      <td>
-        4/29: Final review in-class
-        <br/>
-        Note that <a href="/homework/homework-13.html">Homework&nbsp;13</a> is the final exam review
-      </td>
-      <td>
-      </td>
-    </tr>
-    <tr>
-      <td><b>16</b><br/>5/4</td>
-      <td>
-        <strong>5/4: Final exam: Monday, 8-10 am</strong>
+        <strong>12/7: Final exam: Monday, 4-6p</strong>
       </td>
       <td></td>
     </tr>

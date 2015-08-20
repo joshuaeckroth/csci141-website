@@ -4,7 +4,7 @@ layout: default
 ---
 
 <p>
-CSCI 141 - 01, Spring 2015 &mdash; Introduction to Computer Science I<br/>
+CSCI 141 - 01, Fall 2015 &mdash; Introduction to Computer Science I<br/>
 </p>
 
 Work hard in this class and you should be able to:
@@ -17,11 +17,11 @@ Work hard in this class and you should be able to:
 
 - Eliz Hall 214-9, 386-740-2519
 
-- Office hours: Mon: 2:30-3:30, Tue: 12-2, Thur: 1-2
+- Office hours: Mon: 12-1:30, Wed: 12-1:30 &amp; 2:30-3:30, Fri 11-12
 
 ## Text book
 
-There is no official text book for this class. This website should be sufficient.
+There is no text book for this class. This website should be sufficient.
 
 ## Grading
 
@@ -39,15 +39,15 @@ There is no official text book for this class. This website should be sufficient
 Homework may be turned in late, up to the day of the final exam. Late
 work is penalized. The maximum grade for late work is 60%.
 
-Homework will be turned in on Blackboard. See [homework 1](/homework/homework-1.html) for information about how to submit code.
+Homework will be turned in on Blackboard. See the [Eclipse](/lecture/eclipse.html) notes for information about how to submit code.
 
 ## Test dates
 
-- Test 1: Wed, Feb 11
+- Test 1: Mon, 9/21
 
-- Test 2: Wed, Mar 25
+- Test 2: Mon, 11/2
 
-- Final exam: Mon, May 4, 8-10am
+- Final exam: Mon, 12/7, 4-6p
 
 See the [calendar](/lecture/calendar.html) for more dates.
 
@@ -57,7 +57,7 @@ I am strongly in agreement with the
 [Stetson University Honor Code](http://www.stetson.edu/other/honor-system/). Any
 form of cheating is not acceptable, will not be tolerated, and could
 lead to dismissal from the University. This includes plagiarism of any
-sort on homework, reviews, or exams. So please, do not cheat!
+sort on homework, reviews, or exams.
 
 ## Academic success center
 
