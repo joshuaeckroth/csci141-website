@@ -3,103 +3,63 @@ title: Homework 8
 layout: default
 ---
 
-Test 2 covers:
+Skills needed to complete this assignment:
 
-- [Arrays](/lecture/arrays.html)
 - [Classes](/lecture/classes.html)
 
-## Test 2 review
+Note: Each class needs to be in its own file. Eclipse will do this for you if you use the menus to create a new class.
 
-### Arrays
+## Task 1
 
-Create an array of three integers. Fill it with arbitrary non-zero values.
-
-Suppose you have an integer `n`. Create an array of `double` values, size `n`, and make every element equal to 5.0.
-
-Given an array `ws`, print its size in one line of code (`System.out.println(...)`).
-
-Write a function that computes and returns the following sum, for two `double` arrays of equal length `n`:
-
-<div>
-$$
-s = \sum_i^n (x_i - 2y_i)
-$$
-</div>
-
-Write a function that returns a new integer array of a given size (the size is a parameter), and fills it with zeros.
-
-Assuming the function below exists, write one line of code that uses it properly (saves the returned array, gives appropriate arguments):
+(1) Identify the constructor in this code, and list its parameters:
 
 {% highlight java %}
-String[] foo(int a, double b, char c, int[] d) { ... }
-{% endhighlight %}
+public class Video
+{
+  private int length;
+  private String creator;
 
-### Classes
-
-Create an `Ellipse` class with a "major axis" field, "minor axis" field, and "area" method, calculated as `pi*major_axis*minor_axis`. Include a constructor that lets you set major/minor axis.
-
-Assuming the class below exists and is fully defined, create a new instance of the class using the constructor (and arbitrary arguments), then execute the `bar` method on that new instance, and also print the instance.
-
-{% highlight java %}
-public class Foo {
-    // ... private fields
-
-    public Foo(int a, String b)
-    { ... }
-
-    public void bar()
-    { ... }
-
-    public String toString()
-    { ... }
+  public void play() { ... }
+  public void pause() { ... }
+  public void rewind() { ... }
+  public Video(int l, String c) { ... }
+  public int getLength() { ... }
+  public String getCreator() { ... }
+  public void setCreator(String c) { ... }
 }
 {% endhighlight %}
 
-In the following class definition, label/list these features: the constructor, all methods (not including the constructor), all fields.
+(2) Identify the "fields" of the above class (give their types and names).
+
+(3) Write code for the "getters" and "setters", i.e., `getLength`, `getCreator`, and `setCreator`.
+
+## Task 2
+
+Create a class to represent a student. This class should not be your main class (not the class with the `main` method). It should contain this information:
+
+- First name and last name (separately).
+- 800-number ID.
+- Birthdate. Use a variable of type `Calendar` and set it equal to something like this: `birthdate = GregorianCalendar.getInstance()`, and then in your constructor or "setter" method change the calendar date like so: `birthdate.set(1990, 12, 31)` for 12/31/1990.
+
+That information should be `private` in the class. Create "getters" and "setters" for the data. Create a constructor that initializes the data with arguments given to the constructor.
+
+Create a `toString` method to print the student info in a friendly format. You can convert the birth date into a string using the following technique (assuming your `birthdate` variable has type `Calendar`):
 
 {% highlight java %}
-public class Weapon {
-    private int damage;
-    private String name;
-
-    public Weapon(int newDamage, String newName)
-    {
-        damage = newDamage;
-        name = newName;
-    }
-
-    public int getDamage()
-    {
-        return damage;
-    }
-
-    public String getName()
-    {
-        return name;
-    }
-
-    public void setDamage(int newDamage)
-    {
-        damage = newDamage;
-    }
-
-    public void setName(String newName)
-    {
-        name = newName;
-    }
-    public String toString()
-    {
-        return "Weapon: " + name;
-    }
-}
+SimpleDateFormat birthdateFormat = new SimpleDateFormat("yyyy-MM-dd");
+String birthdateString = birthdateFormat.format(birthdate.getTime());
 {% endhighlight %}
 
-Create a very simple class definition so that this line of code works (note, there are many possible answers):
+You can choose other formats if you don't like `yyyy-MM-dd` (e.g., "1990-12-31"). See the [SimpleDateFormat docs](http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html) for details.
 
-{% highlight java %}
-Vehicle myBabysHonda = new Vehicle("Honda", "Accord", 2014, 20414.00);
-{% endhighlight java %}
+Test each method in your class. Create some fake student data, use the getters and setters, print the student data in a friendly format. Use the `main` function in your main class for these tests.
 
-Write a class definition (but no code in the methods) that satisfies this UML diagram:
+## Task 3
 
-![File UML](/images/file-uml.png)
+Create a bank account class that has the following functionality:
+
+- You can create a bank account with a certain initial balance (i.e., the constructor has a parameter that sets the initial balance).
+- You can deposit money into the account. Obviously, this action modifies the balance.
+- You can withdraw money from the account, but only if it will not cause the balance to go negative. If the balance would go negative, the withdrawal doesn't actually occur.
+- You can get the current balance, but not set the balance (except by using `withdraw` and `deposit`, as described).
+- You can print the bank account in a friendly readable format (e.g., using just `System.out.println(b)` in your `main`, where `b` is a bank account object). This is accomplished by creating a `toString` method in the bank account class.

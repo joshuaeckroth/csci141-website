@@ -58,6 +58,8 @@ title: Calendar
       </td>
       <td>
         <a href="/homework/homework-4.html">Homework&nbsp;4</a>
+        <br/>
+        <a href="/homework/homework-5.html">Homework&nbsp;5</a>
       </td>
     </tr>
     <tr>
@@ -76,7 +78,7 @@ title: Calendar
         <a href="/lecture/arrays.html">Arrays</a>
       </td>
       <td>
-        <a href="/homework/homework-5.html">Homework&nbsp;5</a>
+        <a href="/homework/homework-6.html">Homework&nbsp;6</a>
       </td>
     </tr>
     <tr>
@@ -84,7 +86,7 @@ title: Calendar
       <td>
         <a href="/lecture/arrays.html">Arrays</a>
       <td>
-        <a href="/homework/homework-6.html">Homework&nbsp;6</a>
+        <a href="/homework/homework-7.html">Homework&nbsp;7</a>
       </td>
     </tr>
     <tr>
@@ -93,7 +95,7 @@ title: Calendar
         <a href="/lecture/classes.html">Classes</a>
       </td>
       <td>
-        <a href="/homework/homework-7.html">Homework&nbsp;7</a>
+        <a href="/homework/homework-8.html">Homework&nbsp;8</a>
       </td>
     </tr>
     <tr>
@@ -115,11 +117,11 @@ title: Calendar
         <br/>
         10/30: Test 2 review in-class
         <br/>
-        Note that <a href="/homework/homework-8.html">Homework&nbsp;8</a> is a test review
+        Note that <a href="/homework/homework-9.html">Homework&nbsp;9</a> is a test review
         <br/>
       </td>
       <td>
-        <a href="/homework/homework-8.html">Homework&nbsp;8</a>
+        <a href="/homework/homework-9.html">Homework&nbsp;9</a>
       </td>
     </tr>
     <tr>
@@ -138,7 +140,7 @@ title: Calendar
         <a href="/lecture/inheritance.html">Inheritance</a>
       </td>
       <td>
-        <a href="/homework/homework-9.html">Homework&nbsp;9</a>
+        <a href="/homework/homework-10.html">Homework&nbsp;10</a>
       </td>
     </tr>
     <tr>
@@ -147,7 +149,7 @@ title: Calendar
         <a href="/lecture/swing">Swing GUIs</a>
       </td>
       <td>
-        <a href="/homework/homework-10.html">Homework&nbsp;10</a>
+        <a href="/homework/homework-11.html">Homework&nbsp;11</a>
       </td>
     </tr>
     <tr>
@@ -156,7 +158,7 @@ title: Calendar
         <a href="/lecture/swing">Swing GUIs</a>
       </td>
       <td>
-        <a href="/homework/homework-11.html">Homework&nbsp;11</a>
+        <a href="/homework/homework-12.html">Homework&nbsp;12</a>
       </td>
     </tr>
     <tr>
@@ -164,10 +166,10 @@ title: Calendar
       <td>
         12/4: Final review in-class
         <br/>
-        Note that <a href="/homework/homework-12.html">Homework&nbsp;12</a> is the final exam review
+        Note that <a href="/homework/homework-13.html">Homework&nbsp;13</a> is the final exam review
       </td>
       <td>
-        <a href="/homework/homework-12.html">Homework&nbsp;12</a>
+        <a href="/homework/homework-13.html">Homework&nbsp;13</a>
       </td>
     </tr>
     <tr>

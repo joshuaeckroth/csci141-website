@@ -5,28 +5,52 @@ layout: default
 
 Skills needed to complete this assignment:
 
-- [Functions](/lecture/functions.html)
+- [Loops](/lecture/loops.html)
 
 ## Task 1
 
-Write a function that prints one line of the bottles-of-beer song, and code in the `main()` function to use the beer function to print the whole song. The beer function should have an integer parameter indicating the number of bottles on the wall. Be sure to handle the last line of the song correctly.
+Your task is to use for() loops and shapes and colors to **recreate
+both of the following textures**. You must recreate them exactly
+(within a few pixels); use the colors specified. You can use a
+different window size, if you want, but make it big enough for the
+texture to repeat a few times. Colors are shown in RGB values.
 
-## Task 2
+Background color can be drawn with `background(r, g, b)`, triangles
+can be drawn with `triangle(x1, y1, x2, y2, x3, y3)`, ellipses can be
+drawn with `ellipse(x, y, w, h)`, fill color can be set with `fill(r,
+g, b)`, stroke (outline) color can be set with `stroke(r, g, b)`, and
+stroke weight (thickness) can be set with `strokeWeight(n)`.
 
-Write a function that determines if a given number is a prime number, and returns true/false. The number to check on should be a parameter. Then write code in `main()` that asks the user for a number, and tells the user if it is prime or not, using the prime function you created.
+### Texture 1
 
-## Task 3
+<div style="text-align: center">
+<img src="/images/texture-1.png" />
+<br/>
+</div>
 
-Write a function that calculates the number of days in a given month. Use the code from the [conditionals](/lecture/conditionals.html) notes (search for "numDays"). Also, in the `main()` function, write a loop that prints the number of days for each month 1-12, using your function.
+Colors: green = (15, 243, 168), orange = (255, 186, 3), yellow = (255,
+254, 3), other yellow = (255, 223, 94), red = (254, 58, 0), creamy
+white = (255, 255, 219).
 
-## Task 4
+This pattern is just rows and columns of two triangles, facing
+opposite directions. It is difficult to position the triangles
+correctly. The color pattern is also difficult to get right; ask me
+for advice on this if you get stuck (note, use modulo %). Your color
+pattern need not exactly match the image, but they should be
+"scattered" (but not random).
 
-Write a function that computes PI using this sequence:
+### Texture 2
 
-```
-PI = 4 * (1 - 1/3 + 1/5 - 1/7 + 1/9 - 1/11 + 1/13 - 1/15 + ...)
-```
+<div style="text-align: center">
+<img src="/images/texture-2.png" />
+<br/>
+</div>
 
-The function should have one parameter that indicates how far to go in the sequence (if you stop at 1/15, that's 8 steps). Your function should return the result.
+Colors: background = (43, 48, 54), outer stroke = (74, 78, 87), inner
+stroke 1 = (111, 115, 144), inner stroke 2 = (148, 143, 199), inner
+stroke 3 = (185, 165, 252).
 
-Then, in your `main()` function, execute this function and show the user the output. Also show the user the builtin value `Math.PI`, so the user can visually compare the two estimates.
+This is easiest if the ellipses are drawn from their centers, using
+`ellipseMode(CENTER)`.
+
+
