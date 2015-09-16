@@ -120,6 +120,28 @@ mymap.put("banana", 0);
 
 This feature is called "generics," because the `HashMap` class is generic, it can work with any two types.
 
+## Type conversion
+
+You can convert some types to others using a "cast", which is written in parentheses:
+
+{% highlight java %}
+float x = 5.2;
+double y = (double)x; // converts x from float to double
+
+int p = 52;
+double q = (double)p; // converts p from int to dobule
+{% endhighlight %}
+
+Casts are important when you want to divide two integers and get a `double` value in return:
+
+{% highlight java %}
+int x = 15;
+if((double)x / 2 > 7.0)
+{
+  // ...
+}
+{% endhighlight %}
+
 ## Constant ("final") variables
 
 You can add the keyword `final` when declaring a variable to indicate that its value may never change. For example:
