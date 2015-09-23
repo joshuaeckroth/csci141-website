@@ -10,10 +10,11 @@ Skills needed to complete this assignment:
 ## Task 1
 
 Your task is to use for() loops and shapes and colors to **recreate
-both of the following textures**. You must recreate them exactly
-(within a few pixels); use the colors specified. You can use a
-different window size, if you want, but make it big enough for the
-texture to repeat a few times. Colors are shown in RGB values.
+one of the following textures**. (**Recreate both for extra credit.**)
+You must recreate them exactly (within a few pixels); use the colors
+specified. You can use a different window size, if you want, but make
+it big enough for the texture to repeat a few times. Colors are shown
+in RGB values.
 
 Background color can be drawn with `background(r, g, b)`, triangles
 can be drawn with `triangle(x1, y1, x2, y2, x3, y3)`, ellipses can be
