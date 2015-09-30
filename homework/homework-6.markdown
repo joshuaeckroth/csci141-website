@@ -19,7 +19,7 @@ Write a function that determines if a given number is a prime number, and return
 
 Write a function that calculates the number of days in a given month. Use the code from the [conditionals](/lecture/conditionals.html) notes (search for "numDays"). Also, in the `main()` function, write a loop that prints the number of days for each month 1-12, using your function.
 
-## Task 4
+## Task 4: Extra credit
 
 Write a function that computes PI using this sequence:
 
