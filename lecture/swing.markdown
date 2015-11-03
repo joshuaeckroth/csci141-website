@@ -111,6 +111,7 @@ addComponent(frame, button, 1, 2, 1, 1, GridBagConstraints.CENTER, GridBagConstr
 The code above uses a helper function (which you must include if you want to use the `addComponent` method as above):
 
 {% highlight java %}
+private static final Insets insets = new Insets(0, 0, 0, 0);
 private static void addComponent(
        Container container, Component component,
        int gridx, int gridy, int gridwidth, int gridheight,
