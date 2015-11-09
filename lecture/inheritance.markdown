@@ -166,6 +166,32 @@ What a phenomenal shape, indeed.
 
 The technique described in this section is called "polymorphism" because objects are acting like different kinds of things in different situations. In the array above, rectangles, ellipses, and triangles are acting as generic shapes. But they're not really generic shapes, and Java knows that, so the appropriate `area()` methods are executed.
 
+## Abstract classes
+
+You can leave some methods undefined if you mark your class as "abstract" and those methods as "abstract" as well.
+
+{% highlight java %}
+public abstract class Shape {
+   int x;
+   int y;
+
+   // normal methods
+   public int getX() {
+       return x;
+   }
+   // ...
+
+   // here is an abstract method
+   public abstract double area(); // no definition!
+
+   // ... other methods
+}
+{% endhighlight %}
+
+Being abstract, you are not able to create any actual `Shape` objects. However, child classes must not be abstract and must actually define the abstract methods if you wish to create concrete instances of those classes.
+
+Polymorphism works just the same for abstract parent classes. The appropriate `area()` method will be called just as above.
+
 ## Eclipse assistance
 
 ### Generate getters/setters
