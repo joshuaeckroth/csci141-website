@@ -231,3 +231,39 @@ g.fillOval(x, y, 5, 10);
 {% endhighlight %}
 
 And so on. Look at [this tutorial](http://docs.oracle.com/javase/tutorial/2d/geometry/index.html) for more drawing methods, and [this tutorial](http://docs.oracle.com/javase/tutorial/2d/index.html) for a larger view of 2D graphics in Java.
+
+## Tables
+
+Create a table with initial content.
+
+{% highlight java %}
+String[][] data = { {"John", "Doe", "3.5"}, {"Jane", "Smith", "3.9"} };
+String[] colNames = {"Firstname", "Lastname", "GPA"};
+DefaultTableModel model = new DefaultTableModel(data, colNames);
+JTable mytable = new JTable(model);
+myframe.add(new JScrollPane(mytable), BorderLayout.WEST);
+{% endhighlight %}
+
+Add a row.
+
+{% highlight java %}
+String[] vals = {"(unknown)", "(unknown)", "(unknown)"};
+model.addRow(vals);
+{% endhighlight %}
+
+Delete the selected row (if a row is selected).
+
+{% highlight java %}
+int row = mytable.getSelectedRow();
+if(row != -1) { model.removeRow(row); }
+{% endhighlight %}
+
+## File open/save dialogs
+
+{% highlight java %}
+FileDialog diag = new FileDialog(myframe, "Open File", FileDialog.LOAD); // or FileDialog.SAVE
+diag.setVisible(true);
+if(diag.getFiles().length > 0) {
+    System.out.println(diag.getFiles()[0].getAbsolutePath());
+}
+{% endhighlight %}
