@@ -133,7 +133,7 @@ JButton b2 = new JButton("2");
 JButton b3 = new JButton("3");
 box.add(b1);
 box.add(b2);
-box.add(b3)
+box.add(b3);
 {% endhighlight %}
 
 
