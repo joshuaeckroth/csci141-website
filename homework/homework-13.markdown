@@ -15,6 +15,8 @@ Create a "database editor" that shows a table with rows of records, a new record
 
 ![Database](/images/database-1.png)
 
+You can create your own database (e.g., sports scores, pokedex, etc.). You are required to have at least three columns, at least one of which is numeric.
+
 Clicking "New Record" creates a new row. You can edit the contents of the rows by double-clicking a cell. "Delete Record" removes the selected row.
 
 The "Load Records" button shows a file selector dialog and opens the chosen file. The contents of the file replace the contents of the table. The "Save Records" button saves the current contents of the table to the selected file. You choose how to read and store table data in the file.
