@@ -122,7 +122,19 @@ private static void addComponent(
         
     container.add(component, gbc);
   }
-{% endhighlight %}    
+{% endhighlight %}
+
+### Box layout (vertical/horizontal layouts)
+
+{% highlight java %}
+Box box = new Box(BoxLayout.Y_AXIS); // or X_AXIS
+JButton b1 = new JButton("1");
+JButton b2 = new JButton("2");
+JButton b3 = new JButton("3");
+box.add(b1);
+box.add(b2);
+box.add(b3)
+{% endhighlight %}
 
 
 ## Labels
