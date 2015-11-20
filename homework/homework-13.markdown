@@ -28,3 +28,7 @@ Create a menu bar that has a "File" menu with load, save, and quit actions, and 
 ## More extra credit
 
 Allow sorting the rows by clicking a column. Click a column twice to sort in the reverse order.
+
+## More extra credit
+
+Support adding/removing columns.
