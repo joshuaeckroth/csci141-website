@@ -24,3 +24,7 @@ The "Load Records" button shows a file selector dialog and opens the chosen file
 ## Extra credit
 
 Create a menu bar that has a "File" menu with load, save, and quit actions, and a "Record" menu with new and delete record actions.
+
+## More extra credit
+
+Allow sorting the rows by clicking a column. Click a column twice to sort in the reverse order.
