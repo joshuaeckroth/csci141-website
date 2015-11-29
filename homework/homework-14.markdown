@@ -22,7 +22,7 @@ The final exam covers:
 
 Write a function that takes an integer as input and returns the smallest integer greater than one that divides it.
 
-Make use of the `Math.floor()` method, as described below. Give it an argument such that the return value is `13.0`.
+Make use of the `Math.floor()` method, as described below. You do not need to import Math, you can just refer to the method directly. Give it an argument such that the return value is `13.0`.
 
 > `public static double floor(double a)`
 >
@@ -120,5 +120,13 @@ Create a simple GUI with a single button that changes the button text (to whatev
 
 ### Exceptions
 
+Write a chunk of code that creates a `Scanner` and calls `nextInt()`, but which also handles the possible `InputMismatchException`. If the exception occurs, the code should print "Invalid integer."
+
+Write a static `getInput()` method that can throw a new exception when the input is invalid. Use a `Scanner` in the method. Ask the user for question using `nextLine()`. Throw an exception if the user input does not contain a question mark. Use the condition `if(mystr.indexOf("?") == -1)` to check if the string `mystr` does not contain a question mark.
+
 ### Files
+
+Write a static method `boolean saveArray(Object[] arr, String filename)` that saves every value in the array `arr` to a file indicated by `filename`. Since every value in the array is an `Object` (which is the parent class of every other Java class), you can use `toString()` on each value. Separate the values in the file by a newline. Return `true` if the process worked (no exceptions), return `false` otherwise. Do not allow exceptions to be thrown out of the function.
+
+Write a static method `int[] readIntegers(String filename)` that reads a list of integers from a file. The first number in the file will be the number of integers that follow. Integers in the file are separated by spaces or newlines, so the `nextInt()` function on `Scanner` will suffice. Return an array containing the integers. Do not allow exceptions to be thrown out of the method.
 
