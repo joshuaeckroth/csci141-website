@@ -129,9 +129,10 @@ title: Calendar
       <td>
         <strong>11/2: Test 2</strong>
         <br/>
-        11/4: Discuss answers, <a href="/lecture/files.html">Files</a>
+        11/4: Discuss answers, <a href="/lecture/inheritance.html">Inheritance</a>
       </td>
       <td>
+        <a href="/homework/homework-10.html">Homework&nbsp;10</a>
       </td>
     </tr>
     <tr>
@@ -140,7 +141,7 @@ title: Calendar
         <a href="/lecture/inheritance.html">Inheritance</a>
       </td>
       <td>
-        <a href="/homework/homework-10.html">Homework&nbsp;10</a>
+        <a href="/homework/homework-11.html">Homework&nbsp;11</a>
       </td>
     </tr>
     <tr>
@@ -149,7 +150,7 @@ title: Calendar
         <a href="/lecture/swing">Swing GUIs</a>
       </td>
       <td>
-        <a href="/homework/homework-11.html">Homework&nbsp;11</a>
+        <a href="/homework/homework-12.html">Homework&nbsp;12</a>
       </td>
     </tr>
     <tr>
@@ -158,7 +159,7 @@ title: Calendar
         <a href="/lecture/swing">Swing GUIs</a>
       </td>
       <td>
-        <a href="/homework/homework-12.html">Homework&nbsp;12</a>
+        <a href="/homework/homework-13.html">Homework&nbsp;13</a>
       </td>
     </tr>
     <tr>
@@ -166,10 +167,10 @@ title: Calendar
       <td>
         12/4: Final review in-class
         <br/>
-        Note that <a href="/homework/homework-13.html">Homework&nbsp;13</a> is the final exam review
+        Note that <a href="/homework/homework-14.html">Homework&nbsp;14</a> is the final exam review
       </td>
       <td>
-        <a href="/homework/homework-13.html">Homework&nbsp;13</a>
+        <a href="/homework/homework-14.html">Homework&nbsp;14</a>
       </td>
     </tr>
     <tr>
