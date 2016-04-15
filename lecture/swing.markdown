@@ -5,7 +5,7 @@ layout: default
 
 ## Frames
 
-{% highlight java %}
+```
 public static void gui() {
 	JFrame frame = new JFrame("My Frame!");
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -22,7 +22,7 @@ public static void main(String[] args)
         }
     });
 }
-{% endhighlight %}
+```
 
 ## Panels and layouts
 
@@ -36,12 +36,13 @@ Image from [Java Foundation Classes in a Nutshell](http://docstore.mik.ua/orelly
 
 Image from [Wikipedia](http://commons.wikimedia.org/wiki/File:Java-LayoutManager-BorderLayout.svg).
 
-{% highlight java %}
+```
+
 JPanel win = new JPanel(); // or JFrame
 win.setLayout(new BorderLayout());
 // use NORTH or SOUTH or EAST or WEST or CENTER
 win.add(myLabel, BorderLayout.NORTH);
-{% endhighlight %}
+```
 
 ### FlowLayout
 
@@ -49,13 +50,13 @@ win.add(myLabel, BorderLayout.NORTH);
 
 Image from [zentut](http://www.zentut.com/java-swing/java-swing-flowlayout/).
 
-{% highlight java %}
+```
 JButton component1 = new JButton();
 JButton component2 = new JButton();
 JPanel panel = new JPanel(new FlowLayout(FlowLayout.CENTER)); // or LEFT or RIGHT
 panel.add(component1);
 panel.add(component2);
-{% endhighlight %}
+```
 
 ### GridLayout
 
@@ -63,7 +64,7 @@ panel.add(component2);
 
 Image from [zentut](http://www.zentut.com/java-swing/java-swing-gridlayout/).
 
-{% highlight java %}
+```
 JButton btn1 = new JButton("Button 1");
 JButton btn2 = new JButton("Button 2");
 JButton btn3 = new JButton("Button 3");
@@ -78,7 +79,7 @@ panel.add(btn2);
 panel.add(btn3);
 panel.add(btn4);
 panel.add(btn5);
-{% endhighlight %}
+```
 
 ### GridBagLayout
 
@@ -86,7 +87,7 @@ panel.add(btn5);
 
 Image from [Java2s.com](http://www.java2s.com/Tutorial/Java/0240__Swing/UsingGridBagConstraints.htm).
 
-{% highlight java %}
+```
 frame.setLayout(new GridBagLayout());
 JButton button;
 // Row One - Three Buttons
@@ -106,11 +107,11 @@ button = new JButton("Six");
 addComponent(frame, button, 0, 2, 1, 1, GridBagConstraints.CENTER, GridBagConstraints.BOTH);
 button = new JButton("Seven");
 addComponent(frame, button, 1, 2, 1, 1, GridBagConstraints.CENTER, GridBagConstraints.BOTH);
-{% endhighlight %}
+```
 
 The code above uses a helper function (which you must include if you want to use the `addComponent` method as above):
 
-{% highlight java %}
+```
 private static final Insets insets = new Insets(0, 0, 0, 0);
 private static void addComponent(
        Container container, Component component,
@@ -122,11 +123,11 @@ private static void addComponent(
         
     container.add(component, gbc);
   }
-{% endhighlight %}
+```
 
 ### Box layout (vertical/horizontal layouts)
 
-{% highlight java %}
+```
 Box box = new Box(BoxLayout.Y_AXIS); // or X_AXIS
 JButton b1 = new JButton("1");
 JButton b2 = new JButton("2");
@@ -134,43 +135,43 @@ JButton b3 = new JButton("3");
 box.add(b1);
 box.add(b2);
 box.add(b3);
-{% endhighlight %}
+```
 
 
 ## Labels
 
-{% highlight java %}
+```
 JLabel myLabel = new JLabel();
 myLabel.setText("foo bar");
-{% endhighlight %}
+```
 
 Or,
 
-{% highlight java %}
+```
 JLabel myLabel = new JLabel("foo bar");
-{% endhighlight %}
+```
 
 ## Buttons
 
-{% highlight java %}
+```
 JButton myButton = new JButton();
 myButton.setText("foo bar");
-{% endhighlight %}
+```
 
 Or,
 
-{% highlight java %}
+```
 JButton myButton = new JButton("foo bar");
-{% endhighlight %}
+```
 
 You can use an icon for the button:
 
-{% highlight java %}
+```
 JButton b1 = new JButton(new ImageIcon("filename.png"));
 // or:
 JButton b2 = new JButton();
 b2.setIcon(new ImageIcon("filename.png"));
-{% endhighlight %}
+```
 
 ## Events
 
@@ -180,24 +181,24 @@ To create an event listener, you need to create a class that `implements` the `A
 
 Recall from the [Interfaces](/lecture/interfaces.html) notes that you can create an anonymous class instance that implements an interface. So, you can create a listener like this:
 
-{% highlight java %}
+```
 new ActionListener() {
     public void actionPerformed(ActionEvent e) {
         System.out.println("I'm responding to an event!");
     }
 }
-{% endhighlight %}
+```
 
 You'd usually put that kind of code in an `addActionListener` on a button or other object:
 
-{% highlight java %}
+```
 JButton myButton = new JButton();
 myButton.addActionListener(new ActionListener() {
     public void actionPerformed(ActionEvent e) {
         System.out.println("I'm responding to an event!");
     }
 });
-{% endhighlight %}
+```
 
 ## Custom drawing
 
@@ -205,15 +206,15 @@ Do you wish to draw arbitrary rectangles, ellipses (now called "ovals"), etc.?
 
 First, you need to make a class that's a subclass of `JPanel`:
 
-{% highlight java %}
+```
 public class MyPanel extends JPanel {
 
 }
-{% endhighlight %}
+```
 
 Then you need to override two methods:
 
-{% highlight java %}
+```
 public Dimension getPreferredSize() {
     return new Dimension(500, 250); // add your panel's preferred size
 }
@@ -223,24 +224,24 @@ public void paintComponent(Graphics g) {
     
     // draw your own stuff
 }
-{% endhighlight %}
+```
 
 Then make a new instance of your panel and add it to some layout:
 
-{% highlight java %}
+```
 JFrame myFrame = new JFrame();
 MyPanel myPanel = new MyPanel();
 myFrame.add(myPanel);
-{% endhighlight %}
+```
 
 Within your overridden `paintComponent` method, you can call various drawing operations on the `g` object:
 
-{% highlight java %}
+```
 g.setColor(Color.yellow);
 g.drawRect(x, y, 20, 20);
 g.fillRect(x, y, 10, 10);
 g.fillOval(x, y, 5, 10);
-{% endhighlight %}
+```
 
 And so on. Look at [this tutorial](http://docs.oracle.com/javase/tutorial/2d/geometry/index.html) for more drawing methods, and [this tutorial](http://docs.oracle.com/javase/tutorial/2d/index.html) for a larger view of 2D graphics in Java.
 
@@ -248,34 +249,34 @@ And so on. Look at [this tutorial](http://docs.oracle.com/javase/tutorial/2d/geo
 
 Create a table with initial content.
 
-{% highlight java %}
+```
 String[][] data = { {"John", "Doe", "3.5"}, {"Jane", "Smith", "3.9"} };
 String[] colNames = {"Firstname", "Lastname", "GPA"};
 DefaultTableModel model = new DefaultTableModel(data, colNames);
 JTable mytable = new JTable(model);
 myframe.add(new JScrollPane(mytable), BorderLayout.WEST);
-{% endhighlight %}
+```
 
 Add a row.
 
-{% highlight java %}
+```
 String[] vals = {"(unknown)", "(unknown)", "(unknown)"};
 model.addRow(vals);
-{% endhighlight %}
+```
 
 Delete the selected row (if a row is selected).
 
-{% highlight java %}
+```
 int row = mytable.getSelectedRow();
 if(row != -1) { model.removeRow(row); }
-{% endhighlight %}
+```
 
 ## File open/save dialogs
 
-{% highlight java %}
+```
 FileDialog diag = new FileDialog(myframe, "Open File", FileDialog.LOAD); // or FileDialog.SAVE
 diag.setVisible(true);
 if(diag.getFiles().length > 0) {
     System.out.println(diag.getFiles()[0].getAbsolutePath());
 }
-{% endhighlight %}
+```
