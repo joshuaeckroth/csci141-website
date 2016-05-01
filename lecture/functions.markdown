@@ -15,9 +15,9 @@ Note, functions are also called **methods** and certain kinds of functions (**vo
 
 Every function looks like this:
 
-{% highlight java %}
+```
 public static [void/int/double/...] functionname(int x, double y, ...)
-{% endhighlight %}
+```
 
 - The `public` part will sometimes be `private` in our future programs.
 
@@ -35,12 +35,12 @@ Void functions, or procedures, do not return any value. They are typically used 
 
 Here is an example:
 
-{% highlight java %}
+```
 public static void printHelloWorld()
 {
     System.out.println("Hello, world!");
 }
-{% endhighlight %}
+```
 
 ## Non-void functions
 
@@ -48,55 +48,55 @@ Non-void functions return some type of value. The type of value must be specifie
 
 Here is an example of a function that returns an `int`:
 
-{% highlight java %}
+```
 public static int generate42()
 {
     return 42;
 }
-{% endhighlight %}
+```
 
 When calling a function that returns, you almost always want to save or otherwise use the value it returns:
 
-{% highlight java %}
+```
 int mynumber = generate42();
-{% endhighlight %}
+```
 
 ## Functions with arguments
 
 Most functions require arguments to be useful. Here is an example of a function that returns the Euclidean distance between two x,y pairs:
 
-{% highlight java %}
+```
 public static double euclideanDistance(double x1, double y1, double x2, double y2)
 {
     double sum = (x2-x1)*(x2-x1) + (y2-y1)*(y2-y1);
     return sqrt(sum);
 }
-{% endhighlight %}
+```
 
 That function might be used like so:
 
-{% highlight java %}
+```
 double a = 2.2;
 double b = 1.4;
 double dist = euclideanDistance(a, b, 3.5, 7.0);
-{% endhighlight %}
+```
 
 Note, if you use variables for arguments (like `a` and `b` above), the names of these variables do not need to match the parameter names. Only the function knows the parameter names. The parameters are local variables, their scope is limited to the function itself.
 
 Here is a void function that prints a log message:
 
-{% highlight java %}
+```
 public static void log(String source, String msg)
 {
     System.out.println("Message from " + source + ": " + msg);
 }
-{% endhighlight %}
+```
 
 That function might be used like so:
 
-{% highlight java %}
+```
 log("nuclear_reactor", "All systems nominal.");
-{% endhighlight %}
+```
 
 ## Arbitrary number of arguments
 
@@ -104,7 +104,7 @@ A function can receive an arbitrary number of arguments by using the special syn
 
 Here is an example of finding the maximum number among a list of arguments:
 
-{% highlight java %}
+```
 public static int maxNumber(int... nums)
 {
     if(nums.length > 0)
@@ -125,15 +125,15 @@ public static int maxNumber(int... nums)
         return -1;
     }
 }
-{% endhighlight %}
+```
 
 Here are a few uses of this function:
 
-{% highlight java %}
+```
 int max1 = maxNumber(3, 2, 6, 4);
 int max2 = maxNumber(77);
 int max3 = maxNumber(); // error case, returns -1
-{% endhighlight %}
+```
 
 ## Overloading functions
 
@@ -141,7 +141,7 @@ You can create different versions of a function but use the same name, as long a
 
 Here is an example from [Oracle's tutorial](http://docs.oracle.com/javase/tutorial/java/javaOO/methods.html).
 
-{% highlight java %}
+```
 public void draw(String s) {
     ...
 }
@@ -154,7 +154,7 @@ public void draw(double f) {
 public void draw(int i, double f) {
     ...
 }
-{% endhighlight %}
+```
 
 That tutorial also says,
 
