@@ -4,7 +4,7 @@ layout: default
 ---
 
 <p>
-CSCI 141 - 01, Fall 2015 &mdash; Introduction to Computer Science I<br/>
+CSCI 141 - 01, Summer 2016 &mdash; Introduction to Computer Science I<br/>
 </p>
 
 Work hard in this class and you should be able to:
@@ -17,7 +17,7 @@ Work hard in this class and you should be able to:
 
 - Eliz Hall 214-9, 386-740-2519
 
-- Office hours: Mon: 12-1:30, Wed: 12-1:30 &amp; 2:30-3:30, Fri 11-12
+- Office hours: By appointment.
 
 ## Text book
 
@@ -27,29 +27,50 @@ There is no text book for this class. This website should be sufficient.
 
 <table>
 <tr>
-<td>Homeworks</td><td>55%</td>
+<td>Attendance</td><td>5%</td>
+</tr><tr>
+<td>Homeworks (9 of them)</td><td>40%</td>
 </tr><tr>
 <td>Test 1</td><td>15%</td>
 </tr><tr>
 <td>Test 2</td><td>15%</td>
 </tr><tr>
-<td>Final exam</td><td>15%</td>
+<td>Final exam</td><td>25%</td>
 </table>
 
-Homework may be turned in late, up to the day of the final exam. Late
-work is penalized. The maximum grade for late work is 60%.
-
-Homework will be turned in on Blackboard. See the [Eclipse](/lecture/eclipse.html) notes for information about how to submit code.
+Late work is penalized 20% for each day that it is late. Submissions more than 3 days late receive no credit. Tests cannot be made up unless a doctor's note is provided.
 
 ## Test dates
 
-- Test 1: Mon, 9/21
+- Test 1: May 25
 
-- Test 2: Mon, 11/2
+- Test 2: June 13
 
-- Final exam: Mon, 12/7, 4-6p
+- Final exam is take-home, so we will not meet that day
 
-See the [calendar](/lecture/calendar.html) for more dates.
+## Homework
+
+We will spend about an hour each class period working on the homework. You will have a new assignment virtually every day that we meet. Normally, the homework will be due at the beginning of the next class. You must use the [grading site](http://147.253.70.151:8080/) to submit your homework. That site will run your code and tell you if it is correct according to a series of test cases. You can submit as many times as you wish, with no penalty (unless you submit after the deadline).
+
+I will give you login credentials to the submission site on the first day of class.
+
+## Calendar
+
+- May 16: (professor traveling, no class)
+- May 18: [programming languages](/lecture/proglang.html), [Eclipse](/lecture/eclipse.html), [variables, types, and scope](/lecture/variables-types-scope.html), [simple input/output](/lecture/simple-io.html), [conditionals](/lecture/conditionals.html)
+- May 23: [loops](/lecture/loops.html), [functions](/lecture/functions.html)
+- May 25: test 1, in class
+- May 30: (holiday, no class)
+- June 1: [classes](/lecture/classes.html)
+- June 6: [arrays](/lecture/arrays.html)
+- June 8: [inheritance](/lecture/inheritance.html), [interfaces](/lecture/interfaces.html)
+- June 13: test 2, in class
+- June 15: [files](/lecture/files.html), [hashmaps](/lecture/hashmaps.html)
+- June 20: [Swing GUIs](/lecture/swing.html)
+- June 22: [threads](/lecture/threads.html)
+- June 27: random topics depending on time
+- Final exam is take-home, no need to meet that day
+
 
 ## Honor code
 
@@ -73,3 +94,4 @@ Success Center will plan how best to coordinate accommodations. The
 Academic Success Center is located at 209 E Bert Fish Drive, and can
 be contacted using the email address
 [asc@stetson.edu](mailto:asc@stetson.edu).
+
