@@ -49,7 +49,7 @@ Every value in your code also has a type. For example, if you write `52` in your
 | `float` | 32 bits | (complex; but less precise than `double`) | `52.0f` or `5.2e2f` |
 | `double` | 64 bits | (complex; but more precise than `float`) | `52.0` or `5.2e2` |
 | `boolean` | 1 bit | `true` or `false` | `true` or `false` |
-| `char` | 16 bits | any of 65535 symbols | `x` or [`\u2665`](http://unicode-table.com/en/2665/) |
+| `char` | 16 bits | any of 65535 symbols | `'x'` or [`\u2665`](http://unicode-table.com/en/2665/) |
 
 Summary:
 
