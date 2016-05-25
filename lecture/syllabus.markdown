@@ -42,9 +42,9 @@ Late work is penalized 20% for each day that it is late. Submissions more than 3
 
 ## Test dates
 
-- Test 1: May 25
+- Test 1: June 1
 
-- Test 2: June 13
+- Test 2: June 15
 
 - Final exam is take-home, so we will not meet that day
 
@@ -58,14 +58,14 @@ I will give you login credentials to the submission site on the first day of cla
 
 - May 16: (professor traveling, no class)
 - May 18: [programming languages](/lecture/proglang.html), [Eclipse](/lecture/eclipse.html), [variables, types, and scope](/lecture/variables-types-scope.html), [simple input/output](/lecture/simple-io.html), [conditionals](/lecture/conditionals.html)
-- May 23: [loops](/lecture/loops.html), [functions](/lecture/functions.html)
-- May 25: test 1, in class
+- May 23: [loops](/lecture/loops.html), 
+- May 25: [functions](/lecture/functions.html)
 - May 30: (holiday, no class)
-- June 1: [classes](/lecture/classes.html)
-- June 6: [arrays](/lecture/arrays.html)
+- June 1: test 1, in class
+- June 6: [classes](/lecture/classes.html)
 - June 8: [inheritance](/lecture/inheritance.html), [interfaces](/lecture/interfaces.html)
-- June 13: test 2, in class
-- June 15: [files](/lecture/files.html), [hashmaps](/lecture/hashmaps.html)
+- June 13: [arrays](/lecture/arrays.html)
+- June 15: test 2, in class, [files](/lecture/files.html), [hashmaps](/lecture/hashmaps.html)
 - June 20: [Swing GUIs](/lecture/swing.html)
 - June 22: [threads](/lecture/threads.html)
 - June 27: random topics depending on time
