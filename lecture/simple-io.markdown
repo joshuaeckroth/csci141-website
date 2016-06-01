@@ -17,6 +17,22 @@ System.out.println("Hello, ");
 System.out.print("World!"); // on next line, since previous added a newline
 ```
 
+## Formatted output
+
+You can choose how numbers are formatted in your output. Instead of `System.out.println` use `System.out.format`. Type your whole message inside the quotes, using `%d` wherever you want an integer, `%f` wherever you want a floating point value, `%s` wherever you want a String, and `%n` wherever you want a newline. Then, put all the variables you want to show up in place of `%d` etc. after the quotes, separated by commas.
+
+You can choose how many digits to show by including a number before `%d` or `%f`. Add a `0` before that number to pad the number with zeros. If you put a number after a `.` before `%f`, you can choose how many numbers to show after the decimal point.
+
+```
+long n = 461012;
+System.out.format("%d%n", n);      //  -->  "461012"
+System.out.format("%08d%n", n);    //  -->  "00461012"
+      
+double pi = Math.PI;
+System.out.format("%f%n", pi);       // -->  "3.141593"
+System.out.format("%.3f%n", pi);     // -->  "3.142"
+```
+
 ### String manipulation
 
 We have already looked at [variables](/lecture/variables-types-scope.html). You can print a variable's value in the usual way:
