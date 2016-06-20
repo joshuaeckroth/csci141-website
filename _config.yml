@@ -1,7 +1,4 @@
 highlighter: pygments
 permalink: none
-markdown: rdiscount
-rdiscount:
-  extensions: [smart]
 gems:
   - jemoji
