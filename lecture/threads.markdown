@@ -1,4 +1,4 @@
----
+--
 title: Threads
 layout: default
 ---
@@ -21,7 +21,7 @@ The class below defines a thread that does something forever. It also has start/
 
 (Technically, this class creates a `Thread` object (which also implements `Runnable`) inside as a private field, and tells it to do the work.)
 
-{% highlight java %}
+```
 public class MyThread implements Runnable {
     private Thread runner;
     
@@ -54,32 +54,32 @@ public class MyThread implements Runnable {
 		}
    }
 }
-{% endhighlight %}
+```
 
 Elsewhere, you would create a new object:
 
-{% highlight java %}
+```
 MyThread mythread = new MyThread();
-{% endhighlight %}
+```
 
 And you would call `start()` and `stop()` at the appropriate times.
 
-{% highlight java %}
+```
 mythread.start();
 mythread.stop();
-{% endhighlight %}
+```
 
 ## Sleeping
 
 Sometimes you want a thread to pause for a small amount of time before continuing its work. This can be used for animation, to delay each picture before it is changed to the next one. `Thread.sleep()` takes a number of milliseconds as its argument. It also may throw an exception, so you need a `try/catch`. 
 
-{% highlight java %}
+```
 try {
 	Thread.sleep(20);
 } catch (InterruptedException e) {
 	e.printStackTrace();
 }
-{% endhighlight %}
+```
 
 You would put this sleep code in your infinite loop in `run()`.
 
@@ -87,7 +87,7 @@ You would put this sleep code in your infinite loop in `run()`.
 
 Main.java:
 
-{% highlight java %}
+```
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -135,11 +135,11 @@ public class Main {
 		});
 	}
 }
-{% endhighlight %}
+```
 
 MyThread.java:
 
-{% highlight java %}
+```
 public class MyThread implements Runnable {
 	private Thread runner;
 	private int i = 0;
@@ -177,4 +177,5 @@ public class MyThread implements Runnable {
 		}
 	}
 }
-{% endhighlight %}
+```
+
