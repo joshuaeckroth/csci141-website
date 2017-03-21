@@ -25,18 +25,11 @@ There is no text book for this class. This website should be sufficient.
 
 ## Grading
 
-<table>
-<tr>
-<td>Attendance</td><td>5%</td>
-</tr><tr>
-<td>Homeworks (9 of them)</td><td>40%</td>
-</tr><tr>
-<td>Test 1</td><td>15%</td>
-</tr><tr>
-<td>Test 2</td><td>15%</td>
-</tr><tr>
-<td>Final exam</td><td>25%</td>
-</table>
+- Attendance: 5%
+- Homeworks (9 of them): 40%
+- Test 1: 15%
+- Test 2: 15%
+- Final exam: 25%
 
 Late work is penalized 20% for each day that it is late. Submissions more than 3 days late receive no credit. Tests cannot be made up unless a doctor's note is provided.
 
